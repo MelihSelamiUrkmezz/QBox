@@ -31,7 +31,7 @@ public class DBConnection{
         }
         try {
             con = DriverManager.getConnection(url, DBConnection.db_username, DBConnection.db_password);
-            System.out.println("Connection is succesfuly.");
+            System.out.println("Connection is succesfuly..");
         } catch (SQLException e) {
             System.out.println("Connection is not succesfuly.");
         }
