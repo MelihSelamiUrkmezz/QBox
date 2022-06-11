@@ -72,6 +72,7 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setBounds(new java.awt.Rectangle(600, 200, 0, 0));
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(800, 800));
 
         generalpanel.setkEndColor(new java.awt.Color(0, 0, 204));
         generalpanel.setkGradientFocus(1200);
@@ -87,7 +88,6 @@ public class Login extends javax.swing.JFrame {
         usernamelabel.setForeground(new java.awt.Color(51, 153, 255));
         usernamelabel.setText("Email");
 
-        i_username.setBackground(new java.awt.Color(255, 255, 255));
         i_username.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         i_username.setForeground(new java.awt.Color(51, 153, 255));
         i_username.setBorder(null);
@@ -98,7 +98,6 @@ public class Login extends javax.swing.JFrame {
         passwordlabel.setForeground(new java.awt.Color(51, 153, 255));
         passwordlabel.setText("Password");
 
-        i_password.setBackground(new java.awt.Color(255, 255, 255));
         i_password.setForeground(new java.awt.Color(51, 153, 255));
         i_password.setBorder(null);
 
@@ -259,7 +258,7 @@ public class Login extends javax.swing.JFrame {
                     .addGroup(generalpanelLayout.createSequentialGroup()
                         .addGap(148, 148, 148)
                         .addComponent(projectnamelabel)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(generalpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, generalpanelLayout.createSequentialGroup()
                         .addComponent(jButton1)
@@ -280,7 +279,7 @@ public class Login extends javax.swing.JFrame {
                         .addComponent(projectnamelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(iconlabel)))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(generalpanelLayout.createSequentialGroup()
                 .addComponent(jButton1)
                 .addGap(0, 0, Short.MAX_VALUE))
