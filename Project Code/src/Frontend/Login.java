@@ -14,8 +14,6 @@ public class Login extends javax.swing.JFrame {
 
     DBConnection db=new DBConnection();
     int wrong_number=0;
-    String remember_email="";
-    String remember_password="";
     
     public Login() {
         initComponents();
