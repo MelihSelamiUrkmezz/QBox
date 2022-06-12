@@ -93,10 +93,14 @@ public class MainPage extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         PnlQA = new javax.swing.JPanel();
         kGradientPanel2 = new keeptoo.KGradientPanel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         PnlInfo = new javax.swing.JPanel();
         kGradientPanel1 = new keeptoo.KGradientPanel();
         jLabel6 = new javax.swing.JLabel();
+        PnlQ = new javax.swing.JPanel();
+        kGradientPanel6 = new keeptoo.KGradientPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -109,7 +113,7 @@ public class MainPage extends javax.swing.JFrame {
                 jLabel1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 610, 60, 80));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, 60, 80));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/user.png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -117,7 +121,7 @@ public class MainPage extends javax.swing.JFrame {
                 jLabel2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 60, 80));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 60, 80));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/data-analysis.png"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -125,7 +129,7 @@ public class MainPage extends javax.swing.JFrame {
                 jLabel3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 60, 80));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 60, 80));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/trophy.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -133,15 +137,15 @@ public class MainPage extends javax.swing.JFrame {
                 jLabel4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 60, 80));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 60, 80));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/question.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/open-book.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 60, 80));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 60, 80));
 
         kGradientPanel5.setkEndColor(new java.awt.Color(0, 0, 204));
         kGradientPanel5.setkGradientFocus(1200);
@@ -537,23 +541,23 @@ public class MainPage extends javax.swing.JFrame {
         kGradientPanel2.setkGradientFocus(1200);
         kGradientPanel2.setkStartColor(new java.awt.Color(153, 0, 153));
 
-        jLabel7.setText("QA");
+        jLabel18.setText("question Answer");
 
         javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
         kGradientPanel2.setLayout(kGradientPanel2Layout);
         kGradientPanel2Layout.setHorizontalGroup(
             kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel2Layout.createSequentialGroup()
-                .addGap(431, 431, 431)
-                .addComponent(jLabel7)
-                .addContainerGap(552, Short.MAX_VALUE))
+                .addGap(376, 376, 376)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(429, Short.MAX_VALUE))
         );
         kGradientPanel2Layout.setVerticalGroup(
             kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7)
-                .addContainerGap(778, Short.MAX_VALUE))
+                .addGap(72, 72, 72)
+                .addComponent(jLabel18)
+                .addContainerGap(722, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout PnlQALayout = new javax.swing.GroupLayout(PnlQA);
@@ -605,7 +609,51 @@ public class MainPage extends javax.swing.JFrame {
 
         TabbedMenu.addTab("tab5", PnlInfo);
 
+        kGradientPanel6.setkEndColor(new java.awt.Color(0, 0, 204));
+        kGradientPanel6.setkGradientFocus(1200);
+        kGradientPanel6.setkStartColor(new java.awt.Color(153, 0, 153));
+
+        jLabel19.setText("Qustions");
+
+        javax.swing.GroupLayout kGradientPanel6Layout = new javax.swing.GroupLayout(kGradientPanel6);
+        kGradientPanel6.setLayout(kGradientPanel6Layout);
+        kGradientPanel6Layout.setHorizontalGroup(
+            kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel6Layout.createSequentialGroup()
+                .addGap(379, 379, 379)
+                .addComponent(jLabel19)
+                .addContainerGap(469, Short.MAX_VALUE))
+        );
+        kGradientPanel6Layout.setVerticalGroup(
+            kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kGradientPanel6Layout.createSequentialGroup()
+                .addGap(86, 86, 86)
+                .addComponent(jLabel19)
+                .addContainerGap(708, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout PnlQLayout = new javax.swing.GroupLayout(PnlQ);
+        PnlQ.setLayout(PnlQLayout);
+        PnlQLayout.setHorizontalGroup(
+            PnlQLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(kGradientPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        PnlQLayout.setVerticalGroup(
+            PnlQLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(kGradientPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        TabbedMenu.addTab("tab6", PnlQ);
+
         jPanel1.add(TabbedMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, -40, 900, 840));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/question.png"))); // NOI18N
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 60, 80));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -640,12 +688,17 @@ public class MainPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-         TabbedMenu.setSelectedIndex(3);
+         TabbedMenu.setSelectedIndex(5); 
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
          TabbedMenu.setSelectedIndex(4);
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        TabbedMenu.setSelectedIndex(3);
+    }//GEN-LAST:event_jLabel7MouseClicked
 
     /**
      * @param args the command line arguments
@@ -697,6 +750,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel PnlArrangement;
     private javax.swing.JPanel PnlInfo;
     private javax.swing.JPanel PnlProfile;
+    private javax.swing.JPanel PnlQ;
     private javax.swing.JPanel PnlQA;
     private javax.swing.JPanel PnlStatistics;
     private javax.swing.JTabbedPane TabbedMenu;
@@ -722,6 +776,8 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -749,6 +805,7 @@ public class MainPage extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kGradientPanel3;
     private keeptoo.KGradientPanel kGradientPanel4;
     private keeptoo.KGradientPanel kGradientPanel5;
+    private keeptoo.KGradientPanel kGradientPanel6;
     private javax.swing.JLabel lbl_sBiyoloji;
     private javax.swing.JLabel lbl_sFizik;
     private javax.swing.JLabel lbl_sKimya;
