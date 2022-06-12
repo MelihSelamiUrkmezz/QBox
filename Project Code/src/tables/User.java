@@ -4,25 +4,43 @@ package tables;
 
 public class User {
     
-    private int id, depId;
-    private String name, surName, mail, class_,school;
+    private int id, depId, queue;
+    private String name, surName, mail, class_,school, password;
     
     public User(){
         
     }
 
-    public User(int id, int depId, String name, String surName, String mail, String class_, String school) {
+    public User(int id, int depId, int queue, String name, String surName, String mail, String class_, String school, String password) {
         this.id = id;
         this.depId = depId;
+        this.queue = queue;
         this.name = name;
         this.surName = surName;
         this.mail = mail;
         this.class_ = class_;
         this.school = school;
+        this.password = password;
     }
     
-     // methods...
+      // methods...
 
+    public int getQueue() {
+        return queue;
+    }
+
+    public void setQueue(int queue) {
+        this.queue = queue;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
     public int getId() {
         return id;
     }

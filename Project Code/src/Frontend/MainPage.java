@@ -4,6 +4,8 @@
  */
 package Frontend;
 
+import tables.*;
+
 /**
  *
  * @author melih
@@ -13,8 +15,17 @@ public class MainPage extends javax.swing.JFrame {
     /**
      * Creates new form MainPage
      */
-    public MainPage() {
+    
+    static User user = new User();
+    public MainPage(User user) {
+        
+        this.user = user;
         initComponents();
+        
+        add_fld_values();
+        
+        
+        
     }
 
     /**
@@ -35,7 +46,45 @@ public class MainPage extends javax.swing.JFrame {
         TabbedMenu = new javax.swing.JTabbedPane();
         PnlProfile = new javax.swing.JPanel();
         kGradientPanel5 = new keeptoo.KGradientPanel();
+        jLabel11 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel13 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel14 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jLabel15 = new javax.swing.JLabel();
+        jSeparator4 = new javax.swing.JSeparator();
+        jLabel16 = new javax.swing.JLabel();
+        jSeparator5 = new javax.swing.JSeparator();
+        jLabel17 = new javax.swing.JLabel();
+        jSeparator6 = new javax.swing.JSeparator();
+        jSeparator8 = new javax.swing.JSeparator();
+        jLabel12 = new javax.swing.JLabel();
+        jSeparator9 = new javax.swing.JSeparator();
+        lbl_tMatematik = new javax.swing.JLabel();
+        fld_profile_name = new javax.swing.JTextField();
+        fld_profile_Surname = new javax.swing.JTextField();
+        fld_profile_email = new javax.swing.JTextField();
+        fld_profile_school = new javax.swing.JTextField();
+        fld_profile_class = new javax.swing.JTextField();
+        fld_profile_departmen = new javax.swing.JTextField();
+        fld_profile_tqc = new javax.swing.JTextField();
+        fld_profile_tMatematik = new javax.swing.JTextField();
+        jSeparator10 = new javax.swing.JSeparator();
+        lbl_sMatematik = new javax.swing.JLabel();
+        fld_profile_sMatematik = new javax.swing.JTextField();
+        jSeparator11 = new javax.swing.JSeparator();
+        lbl_sFizik = new javax.swing.JLabel();
+        fld_profile_sFizik = new javax.swing.JTextField();
+        jSeparator12 = new javax.swing.JSeparator();
+        lbl_sKimya = new javax.swing.JLabel();
+        fld_profile_sKimya = new javax.swing.JTextField();
+        jSeparator13 = new javax.swing.JSeparator();
+        lbl_sBiyoloji = new javax.swing.JLabel();
+        fld_profile_sBiyoloji = new javax.swing.JTextField();
+        jSeparator14 = new javax.swing.JSeparator();
+        goalBar = new javax.swing.JProgressBar();
         PnlStatistics = new javax.swing.JPanel();
         kGradientPanel4 = new keeptoo.KGradientPanel();
         jLabel10 = new javax.swing.JLabel();
@@ -98,23 +147,305 @@ public class MainPage extends javax.swing.JFrame {
         kGradientPanel5.setkGradientFocus(1200);
         kGradientPanel5.setkStartColor(new java.awt.Color(153, 0, 153));
 
-        jLabel9.setText("Profile");
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/profile64.png"))); // NOI18N
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel9.setText("Name");
+
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 102));
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel13.setText("Surname");
+
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 102));
+
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel14.setText("Email");
+
+        jSeparator3.setForeground(new java.awt.Color(0, 0, 102));
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel15.setText("School");
+
+        jSeparator4.setForeground(new java.awt.Color(0, 0, 102));
+
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel16.setText("Class");
+
+        jSeparator5.setForeground(new java.awt.Color(0, 0, 102));
+
+        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel17.setText("Department");
+
+        jSeparator6.setForeground(new java.awt.Color(0, 0, 102));
+
+        jSeparator8.setForeground(new java.awt.Color(0, 0, 102));
+        jSeparator8.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel12.setText("Target Question Count");
+
+        jSeparator9.setForeground(new java.awt.Color(0, 0, 102));
+
+        lbl_tMatematik.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lbl_tMatematik.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_tMatematik.setText("Temel Matematik");
+
+        fld_profile_name.setEditable(false);
+        fld_profile_name.setBackground(new java.awt.Color(153, 0, 153));
+        fld_profile_name.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_name.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_name.setText("Temp");
+        fld_profile_name.setBorder(null);
+
+        fld_profile_Surname.setEditable(false);
+        fld_profile_Surname.setBackground(new java.awt.Color(153, 0, 153));
+        fld_profile_Surname.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_Surname.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_Surname.setText("Temp");
+        fld_profile_Surname.setBorder(null);
+
+        fld_profile_email.setEditable(false);
+        fld_profile_email.setBackground(new java.awt.Color(153, 0, 153));
+        fld_profile_email.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_email.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_email.setText("temp@gmail.com");
+        fld_profile_email.setBorder(null);
+
+        fld_profile_school.setEditable(false);
+        fld_profile_school.setBackground(new java.awt.Color(153, 0, 153));
+        fld_profile_school.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_school.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_school.setText("Temp High School");
+        fld_profile_school.setBorder(null);
+
+        fld_profile_class.setEditable(false);
+        fld_profile_class.setBackground(new java.awt.Color(153, 0, 153));
+        fld_profile_class.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_class.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_class.setText("12");
+        fld_profile_class.setBorder(null);
+
+        fld_profile_departmen.setEditable(false);
+        fld_profile_departmen.setBackground(new java.awt.Color(153, 0, 153));
+        fld_profile_departmen.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_departmen.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_departmen.setText("Sayisal");
+        fld_profile_departmen.setBorder(null);
+
+        fld_profile_tqc.setBackground(new java.awt.Color(66, 17, 164));
+        fld_profile_tqc.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_tqc.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_tqc.setText("120");
+        fld_profile_tqc.setBorder(null);
+
+        fld_profile_tMatematik.setBackground(new java.awt.Color(66, 17, 164));
+        fld_profile_tMatematik.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_tMatematik.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_tMatematik.setText("20");
+        fld_profile_tMatematik.setBorder(null);
+
+        jSeparator10.setForeground(new java.awt.Color(0, 0, 102));
+
+        lbl_sMatematik.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lbl_sMatematik.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_sMatematik.setText("Secmeli Matematik");
+
+        fld_profile_sMatematik.setBackground(new java.awt.Color(66, 17, 164));
+        fld_profile_sMatematik.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_sMatematik.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_sMatematik.setText("20");
+        fld_profile_sMatematik.setBorder(null);
+
+        jSeparator11.setForeground(new java.awt.Color(0, 0, 102));
+
+        lbl_sFizik.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lbl_sFizik.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_sFizik.setText("Secmeli Fizik");
+
+        fld_profile_sFizik.setBackground(new java.awt.Color(66, 17, 164));
+        fld_profile_sFizik.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_sFizik.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_sFizik.setText("20");
+        fld_profile_sFizik.setBorder(null);
+
+        jSeparator12.setForeground(new java.awt.Color(0, 0, 102));
+
+        lbl_sKimya.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lbl_sKimya.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_sKimya.setText("Secmeli Kimya");
+
+        fld_profile_sKimya.setBackground(new java.awt.Color(66, 17, 164));
+        fld_profile_sKimya.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_sKimya.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_sKimya.setText("20");
+        fld_profile_sKimya.setBorder(null);
+
+        jSeparator13.setForeground(new java.awt.Color(0, 0, 102));
+
+        lbl_sBiyoloji.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lbl_sBiyoloji.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_sBiyoloji.setText("Secmeli Biyoloji");
+
+        fld_profile_sBiyoloji.setBackground(new java.awt.Color(66, 17, 164));
+        fld_profile_sBiyoloji.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fld_profile_sBiyoloji.setForeground(new java.awt.Color(200, 204, 255));
+        fld_profile_sBiyoloji.setText("20");
+        fld_profile_sBiyoloji.setBorder(null);
+
+        jSeparator14.setForeground(new java.awt.Color(0, 0, 102));
+
+        goalBar.setForeground(new java.awt.Color(102, 102, 102));
+        goalBar.setStringPainted(true);
 
         javax.swing.GroupLayout kGradientPanel5Layout = new javax.swing.GroupLayout(kGradientPanel5);
         kGradientPanel5.setLayout(kGradientPanel5Layout);
         kGradientPanel5Layout.setHorizontalGroup(
             kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel5Layout.createSequentialGroup()
-                .addGap(398, 398, 398)
-                .addComponent(jLabel9)
-                .addContainerGap(468, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addGroup(kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel14)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel9)
+                    .addComponent(jSeparator1)
+                    .addComponent(jSeparator2)
+                    .addComponent(jLabel15)
+                    .addComponent(jSeparator4)
+                    .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(fld_profile_name)
+                    .addComponent(fld_profile_Surname)
+                    .addComponent(fld_profile_email, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .addComponent(fld_profile_school, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .addComponent(fld_profile_class, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .addComponent(fld_profile_departmen, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator6, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(198, 198, 198)
+                .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addGroup(kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jSeparator9)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .addComponent(lbl_tMatematik)
+                    .addComponent(fld_profile_tqc)
+                    .addComponent(fld_profile_tMatematik, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator10)
+                    .addComponent(lbl_sMatematik)
+                    .addComponent(fld_profile_sMatematik)
+                    .addComponent(jSeparator11, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lbl_sFizik)
+                    .addComponent(fld_profile_sFizik)
+                    .addComponent(jSeparator12)
+                    .addComponent(lbl_sKimya)
+                    .addComponent(fld_profile_sKimya)
+                    .addComponent(jSeparator13, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                    .addComponent(lbl_sBiyoloji)
+                    .addComponent(fld_profile_sBiyoloji)
+                    .addComponent(jSeparator14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(kGradientPanel5Layout.createSequentialGroup()
+                .addGroup(kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kGradientPanel5Layout.createSequentialGroup()
+                        .addGap(405, 405, 405)
+                        .addComponent(jLabel11))
+                    .addGroup(kGradientPanel5Layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addComponent(goalBar, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(125, Short.MAX_VALUE))
         );
         kGradientPanel5Layout.setVerticalGroup(
             kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel5Layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jLabel9)
-                .addContainerGap(748, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(kGradientPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addGap(11, 11, 11)
+                        .addComponent(fld_profile_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel13)
+                        .addGap(11, 11, 11)
+                        .addComponent(fld_profile_Surname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fld_profile_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fld_profile_school, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(fld_profile_class, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fld_profile_departmen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(kGradientPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addGap(11, 11, 11)
+                        .addComponent(fld_profile_tqc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbl_tMatematik)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fld_profile_tMatematik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbl_sMatematik)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fld_profile_sMatematik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbl_sFizik)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fld_profile_sFizik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(lbl_sKimya)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(fld_profile_sKimya, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbl_sBiyoloji)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fld_profile_sBiyoloji, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator14, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator8))
+                .addGap(18, 18, 18)
+                .addComponent(goalBar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(178, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout PnlProfileLayout = new javax.swing.GroupLayout(PnlProfile);
@@ -346,9 +677,20 @@ public class MainPage extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainPage().setVisible(true);
+                new MainPage(user).setVisible(true);
             }
         });
+    }
+    
+    public void add_fld_values(){
+        
+        fld_profile_name.setText(user.getName());
+        fld_profile_Surname.setText(user.getSurName());
+        fld_profile_class.setText(user.getClass_());
+        fld_profile_departmen.setText(Integer.toString(user.getDepId()));
+        fld_profile_email.setText(user.getMail());
+        fld_profile_school.setText(user.getSchool());
+          
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -358,8 +700,28 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel PnlQA;
     private javax.swing.JPanel PnlStatistics;
     private javax.swing.JTabbedPane TabbedMenu;
+    private javax.swing.JTextField fld_profile_Surname;
+    private javax.swing.JTextField fld_profile_class;
+    private javax.swing.JTextField fld_profile_departmen;
+    private javax.swing.JTextField fld_profile_email;
+    private javax.swing.JTextField fld_profile_name;
+    private javax.swing.JTextField fld_profile_sBiyoloji;
+    private javax.swing.JTextField fld_profile_sFizik;
+    private javax.swing.JTextField fld_profile_sKimya;
+    private javax.swing.JTextField fld_profile_sMatematik;
+    private javax.swing.JTextField fld_profile_school;
+    private javax.swing.JTextField fld_profile_tMatematik;
+    private javax.swing.JTextField fld_profile_tqc;
+    private javax.swing.JProgressBar goalBar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -369,10 +731,28 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
+    private javax.swing.JSeparator jSeparator14;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JSeparator jSeparator9;
     private keeptoo.KGradientPanel kGradientPanel1;
     private keeptoo.KGradientPanel kGradientPanel2;
     private keeptoo.KGradientPanel kGradientPanel3;
     private keeptoo.KGradientPanel kGradientPanel4;
     private keeptoo.KGradientPanel kGradientPanel5;
+    private javax.swing.JLabel lbl_sBiyoloji;
+    private javax.swing.JLabel lbl_sFizik;
+    private javax.swing.JLabel lbl_sKimya;
+    private javax.swing.JLabel lbl_sMatematik;
+    private javax.swing.JLabel lbl_tMatematik;
     // End of variables declaration//GEN-END:variables
 }
