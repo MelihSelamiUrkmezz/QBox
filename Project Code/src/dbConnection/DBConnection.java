@@ -4,6 +4,7 @@ package dbConnection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -16,6 +17,7 @@ public class DBConnection{
     public Connection con=null;
     public Statement sqlquery=null;
     public PreparedStatement psqlquery=null;
+    public ResultSet rs = null;
 
     public DBConnection() {
         
