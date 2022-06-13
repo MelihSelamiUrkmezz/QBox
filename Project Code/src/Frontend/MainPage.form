@@ -1106,7 +1106,7 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="9" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
@@ -1149,15 +1149,24 @@
                                                   </Group>
                                               </Group>
                                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="name11" max="32767" attributes="0"/>
-                                                  <Component id="name8" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="name7" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="name6" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="name5" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="name4" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="name12" alignment="1" max="32767" attributes="0"/>
-                                                  <Component id="name10" alignment="1" max="32767" attributes="0"/>
-                                                  <Component id="name9" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="tytkimya" max="32767" attributes="0"/>
+                                                  <Component id="tytfelsefe" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tytcografya" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tyttarih" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tytmatematik" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tytturkce" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tytbiyoloji" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="tytfizik" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="tytdin" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator14" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator15" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator16" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator17" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator18" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator19" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator20" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator21" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator22" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -1173,7 +1182,7 @@
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel19" pref="331" max="32767" attributes="0"/>
+                                      <Component id="jLabel19" pref="334" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1197,27 +1206,38 @@
                                           <Group type="102" attributes="0">
                                               <Component id="l1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="name36" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" attributes="0">
-                                              <Component id="l2" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="name14" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Component id="l5" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="name17" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ayt1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <Component id="l3" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="name15" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ayt3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="l2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jSeparator24" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator23" max="32767" attributes="0"/>
+                                                  <Component id="ayt2" max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <Component id="l4" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                                              <Component id="name16" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jSeparator26" max="32767" attributes="0"/>
+                                                  <Component id="jSeparator25" max="32767" attributes="0"/>
+                                                  <Component id="ayt4" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="l5" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jSeparator27" max="32767" attributes="0"/>
+                                                  <Component id="ayt5" max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
@@ -1270,113 +1290,151 @@
                                   </Group>
                                   <Component id="jSeparator8" min="-2" pref="10" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                                          <Component id="name4" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jSeparator10" alignment="0" min="-2" pref="534" max="-2" attributes="0"/>
+                                              <Component id="jSeparator9" alignment="0" min="-2" pref="534" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                              <Component id="jLabel42" max="32767" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jLabel19" min="-2" pref="24" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="name2" min="-2" pref="33" max="-2" attributes="0"/>
+                                                          <Component id="jLabel41" min="-2" pref="32" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="ayt1" min="-2" pref="33" max="-2" attributes="0"/>
+                                                          <Component id="l1" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                      <Component id="jLabel39" min="-2" pref="32" max="-2" attributes="0"/>
+                                                      <Component id="name3" min="-2" pref="33" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="jSeparator23" min="-2" pref="10" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="ayt2" min="-2" pref="33" max="-2" attributes="0"/>
+                                                          <Component id="l2" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                                      <Component id="jSeparator24" min="-2" pref="10" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="ayt3" min="-2" pref="33" max="-2" attributes="0"/>
+                                                          <Component id="l3" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                                      <Component id="jSeparator25" min="-2" pref="10" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="ayt4" min="-2" pref="33" max="-2" attributes="0"/>
+                                                          <Component id="l4" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                                      <Component id="jSeparator26" min="-2" pref="10" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="ayt5" min="-2" pref="33" max="-2" attributes="0"/>
+                                                          <Component id="l5" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="jSeparator27" min="-2" pref="10" max="-2" attributes="0"/>
+                                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <Component id="jSeparator14" min="-2" pref="10" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="411" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="name5" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="tytturkce" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tytmatematik" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                           <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jSeparator15" min="-2" pref="10" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="name6" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="tyttarih" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                           <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                      <Component id="jSeparator16" min="-2" pref="8" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="name7" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="tytcografya" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                           <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                      <Component id="jSeparator17" min="-2" pref="10" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="name8" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="tytfelsefe" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                           <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                      <Component id="jSeparator18" min="-2" pref="10" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="name9" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="tytdin" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                           <Component id="jLabel35" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                      <Component id="jSeparator19" min="-2" pref="10" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="name10" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="tytfizik" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                           <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jSeparator20" min="-2" pref="10" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="name11" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="tytkimya" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                      <Component id="jSeparator21" min="-2" pref="10" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel38" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="name12" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                                          <Component id="tytbiyoloji" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                                       </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jSeparator10" alignment="0" min="-2" pref="534" max="-2" attributes="0"/>
-                                          <Component id="jSeparator9" alignment="0" min="-2" pref="534" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                          <Component id="jLabel42" max="32767" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jLabel19" min="-2" pref="24" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <Group type="103" groupAlignment="1" attributes="0">
-                                                      <Component id="name2" min="-2" pref="33" max="-2" attributes="0"/>
-                                                      <Component id="jLabel41" min="-2" pref="32" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="1" attributes="0">
-                                                      <Component id="name36" min="-2" pref="33" max="-2" attributes="0"/>
-                                                      <Component id="l1" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                                  <Component id="jLabel39" min="-2" pref="32" max="-2" attributes="0"/>
-                                                  <Component id="name3" min="-2" pref="33" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="name14" min="-2" pref="33" max="-2" attributes="0"/>
-                                              <Component id="l2" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="name15" min="-2" pref="33" max="-2" attributes="0"/>
-                                              <Component id="l3" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="name16" min="-2" pref="33" max="-2" attributes="0"/>
-                                              <Component id="l4" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="name17" min="-2" pref="33" max="-2" attributes="0"/>
-                                              <Component id="l5" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jSeparator22" min="-2" pref="10" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="40" max="32767" attributes="0"/>
+                              <EmptySpace pref="34" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
@@ -1454,6 +1512,7 @@
                     </Component>
                     <Component class="javax.swing.JTextField" name="name2">
                       <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="b8" green="4" red="5e" type="rgb"/>
                         </Property>
@@ -1471,6 +1530,7 @@
                     </Component>
                     <Component class="javax.swing.JTextField" name="name3">
                       <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
                         </Property>
@@ -1494,10 +1554,10 @@
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="cc" red="c8" type="rgb"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value=" Turkce"/>
+                        <Property name="text" type="java.lang.String" value="Turkce"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name4">
+                    <Component class="javax.swing.JTextField" name="tytturkce">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1514,7 +1574,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="name4ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tytturkceActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel31">
@@ -1528,7 +1588,7 @@
                         <Property name="text" type="java.lang.String" value="Matematik"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name5">
+                    <Component class="javax.swing.JTextField" name="tytmatematik">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1556,7 +1616,7 @@
                         <Property name="text" type="java.lang.String" value="Tarih"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name6">
+                    <Component class="javax.swing.JTextField" name="tyttarih">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1583,7 +1643,7 @@
                         <Property name="text" type="java.lang.String" value="Cografya"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name7">
+                    <Component class="javax.swing.JTextField" name="tytcografya">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1599,7 +1659,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name8">
+                    <Component class="javax.swing.JTextField" name="tytfelsefe">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1637,7 +1697,7 @@
                         <Property name="text" type="java.lang.String" value="Din Kulturu"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name9">
+                    <Component class="javax.swing.JTextField" name="tytdin">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1653,7 +1713,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name10">
+                    <Component class="javax.swing.JTextField" name="tytfizik">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1680,7 +1740,7 @@
                         <Property name="text" type="java.lang.String" value="Fizik"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name11">
+                    <Component class="javax.swing.JTextField" name="tytkimya">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1696,7 +1756,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name12">
+                    <Component class="javax.swing.JTextField" name="tytbiyoloji">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="99" green="0" red="99" type="rgb"/>
@@ -1745,7 +1805,7 @@
                         <Property name="text" type="java.lang.String" value="Ders 1"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name14">
+                    <Component class="javax.swing.JTextField" name="ayt2">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="b8" green="4" red="5e" type="rgb"/>
@@ -1762,7 +1822,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name15">
+                    <Component class="javax.swing.JTextField" name="ayt3">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="b8" green="4" red="5e" type="rgb"/>
@@ -1779,7 +1839,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name16">
+                    <Component class="javax.swing.JTextField" name="ayt4">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="b8" green="4" red="5e" type="rgb"/>
@@ -1796,7 +1856,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name17">
+                    <Component class="javax.swing.JTextField" name="ayt5">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="b8" green="4" red="5e" type="rgb"/>
@@ -1857,7 +1917,7 @@
                         <Property name="text" type="java.lang.String" value="Ders 1"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="name36">
+                    <Component class="javax.swing.JTextField" name="ayt1">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="b8" green="4" red="5e" type="rgb"/>
@@ -1972,6 +2032,12 @@
                       <SubComponents>
                         <Component class="javax.swing.JComboBox" name="lessonscombo">
                           <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Segoe UI" size="12" style="1"/>
+                            </Property>
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="cc" red="c8" type="rgb"/>
+                            </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="9">
                                 <StringItem index="0" value="TYT T&#xfc;rk&#xe7;e"/>
@@ -2201,6 +2267,34 @@
                           <Image iconType="3" name="/Images/target.png"/>
                         </Property>
                       </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator14">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator15">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator16">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator17">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator18">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator19">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator20">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator21">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator22">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator23">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator24">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator25">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator26">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator27">
                     </Component>
                   </SubComponents>
                 </Container>
