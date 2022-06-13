@@ -9,6 +9,7 @@ import dbConnection.DBConnection;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import tables.User;
  
 public class Login extends javax.swing.JFrame {
 
@@ -316,7 +317,27 @@ public class Login extends javax.swing.JFrame {
             
             if(res.next()){
                 
-                errormessage.setText("Login succesfuly.");
+                //errormessage.setText("Login succesfuly.");
+                
+                // user ekliyoruz
+                
+                User user = new User();
+                
+                user.setName(res.getString("name"));
+                user.setSurName(res.getString("surname"));
+                user.setMail(res.getString("email"));
+                user.setClass_(res.getString("class"));
+                user.setSchool(res.getString("school"));
+                user.setDepId(res.getInt("dep_id"));
+                user.setPassword(res.getString("password"));
+                user.setQueue(res.getInt("queue"));
+                user.setId(res.getInt("id"));
+                
+                MainPage mp = new MainPage(user);
+                
+                mp.setVisible(true);
+                
+                dispose();
                 
                 
             }
