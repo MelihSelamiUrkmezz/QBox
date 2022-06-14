@@ -1,8 +1,8 @@
-# HELLO
+# QBOX Task Dağılımları 
 
-# Profil
-+ Kisiler Bilgiler
-+ Hedef soru sayisi
-+ Cozulen Sorular
-+ Hedef Kalan Miktar
-+ Sifre Degistirme
+# Profil ✓ 
++ Kişisel Bilgiler ✓ 
++ Hedef Soru Sayısı ✓ 
++ Çözülen Sorular ✓ 
++ Hedef Kalan Miktar ✓ 
++ Şifre Değiştirme ✓ 
