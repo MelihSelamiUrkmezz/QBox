@@ -128,7 +128,7 @@ public class Register extends javax.swing.JFrame {
         department.setBackground(new java.awt.Color(153, 0, 153));
         department.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         department.setForeground(new java.awt.Color(204, 204, 255));
-        department.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sayısal", "Eşit Ağırlık", "Sözel", "Dil" }));
+        department.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sayısal", "Eşit Ağırlık", "Sözel" }));
         department.setBorder(null);
         department.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

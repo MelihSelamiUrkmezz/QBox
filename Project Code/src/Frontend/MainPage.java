@@ -32,6 +32,8 @@ public class MainPage extends javax.swing.JFrame {
         ayt_date_calculate();
         default_inf();
         qapanel();
+        remaining_question();
+        ayt_function();
     }
 
     /**
@@ -110,7 +112,7 @@ public class MainPage extends javax.swing.JFrame {
         jSeparator9 = new javax.swing.JSeparator();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        name2 = new javax.swing.JTextField();
+        totalayt = new javax.swing.JTextField();
         totalTYT = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
@@ -172,13 +174,11 @@ public class MainPage extends javax.swing.JFrame {
         jSeparator24 = new javax.swing.JSeparator();
         jSeparator25 = new javax.swing.JSeparator();
         jSeparator26 = new javax.swing.JSeparator();
-        jSeparator27 = new javax.swing.JSeparator();
-        tyttarih1 = new javax.swing.JTextField();
-        jSeparator28 = new javax.swing.JSeparator();
-        tytcografya1 = new javax.swing.JTextField();
-        jSeparator29 = new javax.swing.JSeparator();
+        sep1 = new javax.swing.JSeparator();
         tytmatematik = new javax.swing.JTextField();
         tytturkce = new javax.swing.JTextField();
+        jSeparator28 = new javax.swing.JSeparator();
+        jSeparator14 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
 
@@ -755,12 +755,12 @@ public class MainPage extends javax.swing.JFrame {
         jLabel29.setForeground(new java.awt.Color(200, 204, 255));
         jLabel29.setText(" AYT Question Target");
 
-        name2.setEditable(false);
-        name2.setBackground(new java.awt.Color(94, 4, 184));
-        name2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        name2.setForeground(new java.awt.Color(200, 204, 255));
-        name2.setText("                    ");
-        name2.setBorder(null);
+        totalayt.setEditable(false);
+        totalayt.setBackground(new java.awt.Color(94, 4, 184));
+        totalayt.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        totalayt.setForeground(new java.awt.Color(200, 204, 255));
+        totalayt.setText("                    ");
+        totalayt.setBorder(null);
 
         totalTYT.setEditable(false);
         totalTYT.setBackground(new java.awt.Color(153, 0, 153));
@@ -784,6 +784,7 @@ public class MainPage extends javax.swing.JFrame {
         tyttarih.setBackground(new java.awt.Color(153, 0, 153));
         tyttarih.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tyttarih.setForeground(new java.awt.Color(200, 204, 255));
+        tyttarih.setText("                     ");
         tyttarih.setBorder(null);
 
         jLabel33.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -793,11 +794,13 @@ public class MainPage extends javax.swing.JFrame {
         tytcografya.setBackground(new java.awt.Color(153, 0, 153));
         tytcografya.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tytcografya.setForeground(new java.awt.Color(200, 204, 255));
+        tytcografya.setText("                     ");
         tytcografya.setBorder(null);
 
         tytfelsefe.setBackground(new java.awt.Color(153, 0, 153));
         tytfelsefe.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tytfelsefe.setForeground(new java.awt.Color(200, 204, 255));
+        tytfelsefe.setText("                     ");
         tytfelsefe.setBorder(null);
 
         jLabel34.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -811,11 +814,13 @@ public class MainPage extends javax.swing.JFrame {
         tytdin.setBackground(new java.awt.Color(153, 0, 153));
         tytdin.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tytdin.setForeground(new java.awt.Color(200, 204, 255));
+        tytdin.setText("                     ");
         tytdin.setBorder(null);
 
         tytfizik.setBackground(new java.awt.Color(153, 0, 153));
         tytfizik.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tytfizik.setForeground(new java.awt.Color(200, 204, 255));
+        tytfizik.setText("                     ");
         tytfizik.setBorder(null);
 
         jLabel36.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -825,11 +830,13 @@ public class MainPage extends javax.swing.JFrame {
         tytkimya.setBackground(new java.awt.Color(153, 0, 153));
         tytkimya.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tytkimya.setForeground(new java.awt.Color(200, 204, 255));
+        tytkimya.setText("                     ");
         tytkimya.setBorder(null);
 
         tytbiyoloji.setBackground(new java.awt.Color(153, 0, 153));
         tytbiyoloji.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tytbiyoloji.setForeground(new java.awt.Color(200, 204, 255));
+        tytbiyoloji.setText("                     ");
         tytbiyoloji.setBorder(null);
 
         jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -1019,6 +1026,11 @@ public class MainPage extends javax.swing.JFrame {
         btn_ayt_target.setForeground(new java.awt.Color(200, 204, 255));
         btn_ayt_target.setText("Ayt Target Approve!");
         btn_ayt_target.setContentAreaFilled(false);
+        btn_ayt_target.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ayt_targetActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -1060,24 +1072,16 @@ public class MainPage extends javax.swing.JFrame {
 
         jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/target.png"))); // NOI18N
 
-        tyttarih1.setBackground(new java.awt.Color(153, 0, 153));
-        tyttarih1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        tyttarih1.setForeground(new java.awt.Color(200, 204, 255));
-        tyttarih1.setBorder(null);
-
-        tytcografya1.setBackground(new java.awt.Color(153, 0, 153));
-        tytcografya1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        tytcografya1.setForeground(new java.awt.Color(200, 204, 255));
-        tytcografya1.setBorder(null);
-
         tytmatematik.setBackground(new java.awt.Color(153, 0, 153));
         tytmatematik.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tytmatematik.setForeground(new java.awt.Color(200, 204, 255));
+        tytmatematik.setText("                     ");
         tytmatematik.setBorder(null);
 
         tytturkce.setBackground(new java.awt.Color(153, 0, 153));
         tytturkce.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         tytturkce.setForeground(new java.awt.Color(200, 204, 255));
+        tytturkce.setText("                     ");
         tytturkce.setBorder(null);
 
         javax.swing.GroupLayout kGradientPanel6Layout = new javax.swing.GroupLayout(kGradientPanel6);
@@ -1085,7 +1089,6 @@ public class MainPage extends javax.swing.JFrame {
         kGradientPanel6Layout.setHorizontalGroup(
             kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createSequentialGroup()
-                .addContainerGap(36, Short.MAX_VALUE)
                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel39)
@@ -1101,12 +1104,11 @@ public class MainPage extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addGroup(kGradientPanel6Layout.createSequentialGroup()
                                             .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jLabel31)
                                                 .addComponent(jLabel30)
                                                 .addComponent(jLabel32)
                                                 .addComponent(jLabel33)
                                                 .addComponent(jLabel34))
-                                            .addGap(18, 18, 18))
+                                            .addGap(33, 33, 33))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, kGradientPanel6Layout.createSequentialGroup()
                                             .addComponent(jLabel36)
                                             .addGap(32, 32, 32))
@@ -1117,9 +1119,12 @@ public class MainPage extends javax.swing.JFrame {
                                         .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel37)
                                             .addComponent(jLabel38))
-                                        .addGap(46, 46, 46)))
+                                        .addGap(46, 46, 46))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createSequentialGroup()
+                                        .addComponent(jLabel31)
+                                        .addGap(18, 18, 18)))
                                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(tytkimya, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
+                                    .addComponent(tytkimya)
                                     .addComponent(tytfelsefe, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(tytcografya, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(tyttarih, javax.swing.GroupLayout.Alignment.LEADING)
@@ -1134,7 +1139,9 @@ public class MainPage extends javax.swing.JFrame {
                                     .addComponent(jSeparator21)
                                     .addComponent(jSeparator22)
                                     .addComponent(tytmatematik, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tytturkce, javax.swing.GroupLayout.Alignment.LEADING))))
+                                    .addComponent(tytturkce, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jSeparator28, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jSeparator14))))
                         .addGap(26, 26, 26)))
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1144,7 +1151,7 @@ public class MainPage extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE))
                     .addGroup(kGradientPanel6Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                        .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
@@ -1156,7 +1163,7 @@ public class MainPage extends javax.swing.JFrame {
                                 .addGap(16, 16, 16)
                                 .addComponent(jLabel41)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(name2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(totalayt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(64, 64, 64))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createSequentialGroup()
                         .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -1186,7 +1193,7 @@ public class MainPage extends javax.swing.JFrame {
                                 .addComponent(l5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jSeparator27)
+                                    .addComponent(sep1)
                                     .addComponent(ayt5))))
                         .addGap(48, 48, 48))))
             .addGroup(kGradientPanel6Layout.createSequentialGroup()
@@ -1210,20 +1217,6 @@ public class MainPage extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66))
-            .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(kGradientPanel6Layout.createSequentialGroup()
-                    .addGap(203, 203, 203)
-                    .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(tyttarih1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jSeparator28))
-                    .addContainerGap(742, Short.MAX_VALUE)))
-            .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(kGradientPanel6Layout.createSequentialGroup()
-                    .addGap(203, 203, 203)
-                    .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(tytcografya1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jSeparator29))
-                    .addContainerGap(742, Short.MAX_VALUE)))
         );
         kGradientPanel6Layout.setVerticalGroup(
             kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1239,36 +1232,46 @@ public class MainPage extends javax.swing.JFrame {
                         .addComponent(jLabel29))
                     .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(kGradientPanel6Layout.createSequentialGroup()
-                            .addGap(17, 17, 17)
-                            .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kGradientPanel6Layout.createSequentialGroup()
+                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(kGradientPanel6Layout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createSequentialGroup()
                                 .addGap(12, 12, 12)
                                 .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE))
+                    .addGroup(kGradientPanel6Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(kGradientPanel6Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(kGradientPanel6Layout.createSequentialGroup()
-                                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(name2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(49, 49, 49)
-                                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(ayt1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(l1)))
-                                    .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(totalTYT, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(totalayt, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(49, 49, 49)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(ayt1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(l1)))
+                            .addGroup(kGradientPanel6Layout.createSequentialGroup()
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(totalTYT, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(46, 46, 46)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel30)
+                                    .addComponent(tytturkce, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(kGradientPanel6Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSeparator23, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jSeparator23, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jSeparator28, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(4, 4, 4)
                                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(ayt2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1292,78 +1295,61 @@ public class MainPage extends javax.swing.JFrame {
                                     .addComponent(ayt5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(l5))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSeparator27, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(kGradientPanel6Layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel30)
-                            .addComponent(tytturkce, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(21, 21, 21)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel31)
-                            .addComponent(tytmatematik, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(13, 13, 13)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tyttarih, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel32))
-                        .addGap(4, 4, 4)
-                        .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(sep1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kGradientPanel6Layout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel31)
+                                    .addComponent(tytmatematik, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(9, 9, 9)
+                                .addComponent(jSeparator14, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(tyttarih, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel32))
+                                .addGap(4, 4, 4)
+                                .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(tytcografya, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel33))
+                                .addGap(4, 4, 4)
+                                .addComponent(jSeparator17, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(4, 4, 4)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(tytfelsefe, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel34))
+                                .addGap(3, 3, 3)
+                                .addComponent(jSeparator18, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(tytdin, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel35))
+                                .addGap(3, 3, 3)
+                                .addComponent(jSeparator19, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(5, 5, 5)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(tytfizik, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel36))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(2, 2, 2)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel37)
+                                    .addComponent(tytkimya, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(4, 4, 4)
+                                .addComponent(jSeparator21, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(4, 4, 4)
+                                .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel38)
+                                    .addComponent(tytbiyoloji, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tytcografya, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel33))
-                        .addGap(4, 4, 4)
-                        .addComponent(jSeparator17, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(4, 4, 4)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tytfelsefe, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel34))
-                        .addGap(3, 3, 3)
-                        .addComponent(jSeparator18, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tytdin, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel35))
-                        .addGap(3, 3, 3)
-                        .addComponent(jSeparator19, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tytfizik, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel36))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel37)
-                            .addComponent(tytkimya, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(4, 4, 4)
-                        .addComponent(jSeparator21, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(4, 4, 4)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel38)
-                            .addComponent(tytbiyoloji, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator22, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                        .addComponent(jSeparator22, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(57, 57, 57))
-            .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(kGradientPanel6Layout.createSequentialGroup()
-                    .addGap(327, 327, 327)
-                    .addComponent(tyttarih1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(4, 4, 4)
-                    .addComponent(jSeparator28, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(428, Short.MAX_VALUE)))
-            .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createSequentialGroup()
-                    .addContainerGap(379, Short.MAX_VALUE)
-                    .addComponent(tytcografya1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(4, 4, 4)
-                    .addComponent(jSeparator29, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(374, 374, 374)))
         );
 
         javax.swing.GroupLayout PnlQLayout = new javax.swing.GroupLayout(PnlQ);
@@ -1445,10 +1431,62 @@ public class MainPage extends javax.swing.JFrame {
         ayt3.setBackground(new Color(0,0,0,1));
         ayt4.setBackground(new Color(0,0,0,1));
         ayt5.setBackground(new Color(0,0,0,1));
+        truecount.setBackground(new Color(0,0,0,1));
+        falsecount.setBackground(new  Color(0,0,0,1));
+        blankcount.setBackground(new Color(0,0,0,1));
         
     }
     
-    
+    public void ayt_function(){
+        
+        if(user.getDepId()==1){ // Sayisal Ogrencisi
+            
+            lessonscombo.addItem("AYT Matematik");
+            lessonscombo.addItem("AYT Fizik");
+            lessonscombo.addItem("AYT Kimya");
+            lessonscombo.addItem("AYT Biyoloji");
+            
+            l1.setText("AYT Matematik");
+            l2.setText("AYT Fizik");
+            l3.setText("AYT Kimya");
+            l4.setText("AYT Biyoloji");
+            l5.setText("");
+            
+        }
+        
+        else if(user.getDepId()==3){ // Sozel ogrencisi 
+            
+        lessonscombo.addItem("AYT Türkçe");
+        lessonscombo.addItem("AYT Coğrafya");
+        lessonscombo.addItem("AYT Felsefe");
+        lessonscombo.addItem("AYT Tarih"); 
+            l1.setText("AYT Türkçe");
+            l2.setText("AYT Coğrafya");
+            l3.setText("AYT Felsefe");
+            l4.setText("AYT Tarih");
+            l5.setText("");
+            
+        }
+        
+        else if(user.getDepId()==2){ // Esit agirlik ogrencisi
+            
+        lessonscombo.addItem ("AYT Türkçe");
+        lessonscombo.addItem("AYT Matematik");
+        lessonscombo.addItem("AYT Tarih");
+        lessonscombo.addItem("AYT Coğrafya");
+        lessonscombo.addItem("AYT Felsefe");
+        l1.setText("AYT Türkçe");
+            l2.setText("AYT Matematik");
+            l3.setText("AYT Tarih");
+            l4.setText("AYT Coğrafya");
+            l5.setText("AYT Felsefe");
+            
+            
+        }
+        
+       
+        
+    }
     
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
 
@@ -1477,6 +1515,72 @@ public class MainPage extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel40MouseClicked
 
+    public void remaining_question(){
+        
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        
+        int target_q_count=0,solved_count=0;
+        
+        String query="Select * from Goals where gdate = ? and user_id = ?";
+        
+        try {
+            db.psqlquery=db.con.prepareStatement(query);
+            db.psqlquery.setString(1,nowtime2);
+            db.psqlquery.setInt(2,user.getId());
+            ResultSet res=db.psqlquery.executeQuery();
+            
+            while(res.next()){
+                
+                target_q_count+=res.getInt("qcount");
+                
+            }
+            
+            query="Select * from Questions where udate = ? and user_id = ?";
+            
+            db.psqlquery=db.con.prepareStatement(query);
+            db.psqlquery.setString(1,nowtime2);
+            db.psqlquery.setInt(2,user.getId());
+            res=db.psqlquery.executeQuery();
+            
+            while(res.next()){
+                
+                solved_count+=res.getInt("qcount");
+                
+            }
+            
+            if(target_q_count-solved_count<=0){
+                
+                remainingquestions.setText("0 Awesome!");
+                
+            }
+            
+            else{
+                
+                
+                remainingquestions.setText(Integer.toString(target_q_count-solved_count));
+                
+            }
+            
+            
+
+        } catch (SQLException ex) {
+            Logger.getLogger(MainPage.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
     private void btn_tyt_targetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tyt_targetActionPerformed
         // TODO add your handling code here:
         // hedef belirleme lismi
@@ -1490,49 +1594,49 @@ public class MainPage extends javax.swing.JFrame {
         int tytKimyaTarget=0;
         int tytBiyolojiTarget=0;
         
-        if(tytturkce.getText().length()!=0){
+        if(!tytturkce.getText().isBlank()){
             
-            tytTurkceTarget = Integer.valueOf(tytturkce.getText());
-            
-        }
-        if(tytmatematik.getText().length()!=0){
-            
-            tytMatematikTarget = Integer.valueOf(tytmatematik.getText());
+            tytTurkceTarget = Integer.valueOf(tytturkce.getText().trim());
             
         }
-        if(tyttarih.getText().length()!=0){
+        if(!tytmatematik.getText().isBlank()){
             
-            tytTarihTarget = Integer.valueOf(tyttarih.getText());
-            
-        }
-        if(tytcografya.getText().length()!=0){
-            
-            tytCografyaTarget = Integer.valueOf(tytcografya.getText());
+            tytMatematikTarget = Integer.valueOf(tytmatematik.getText().trim());
             
         }
-        if(tytfelsefe.getText().length()!=0){
+        if(!tyttarih.getText().isBlank()){
             
-            tytFelsefeTarget = Integer.valueOf(tytfelsefe.getText());
-            
-        }
-        if(tytdin.getText().length()!=0){
-            
-            tytDinTarget = Integer.valueOf(tytdin.getText());
+            tytTarihTarget = Integer.valueOf(tyttarih.getText().trim());
             
         }
-        if(tytfizik.getText().length()!=0){
+        if(!tytcografya.getText().isBlank()){
             
-            tytFizikTarget = Integer.valueOf(tytfizik.getText());
-            
-        }
-        if(tytkimya.getText().length()!=0){
-            
-            tytKimyaTarget = Integer.valueOf(tytkimya.getText());
+            tytCografyaTarget = Integer.valueOf(tytcografya.getText().trim());
             
         }
-        if(tytbiyoloji.getText().length()!=0){
+        if(!tytfelsefe.getText().isBlank()){
             
-            tytBiyolojiTarget = Integer.valueOf(tytbiyoloji.getText());
+            tytFelsefeTarget = Integer.valueOf(tytfelsefe.getText().trim());
+            
+        }
+        if(!tytdin.getText().isBlank()){
+            
+            tytDinTarget = Integer.valueOf(tytdin.getText().trim());
+            
+        }
+        if(!tytfizik.getText().isBlank()){
+            
+            tytFizikTarget = Integer.valueOf(tytfizik.getText().trim());
+            
+        }
+        if(!tytkimya.getText().isBlank()){
+            
+            tytKimyaTarget = Integer.valueOf(tytkimya.getText().trim());
+            
+        }
+        if(!tytbiyoloji.getText().isBlank()){
+            
+            tytBiyolojiTarget = Integer.valueOf(tytbiyoloji.getText().trim());
             
         }
         
@@ -1542,18 +1646,18 @@ public class MainPage extends javax.swing.JFrame {
         
         int total = user.addTotalTYTtargetCount();
         
-        totalTYT.setText(""+total);
+        totalTYT.setText(Integer.toString(total));
         
         if(flag){
             
-            
-            JOptionPane.showMessageDialog(null,"Successfully Saved");
+            JOptionPane.showMessageDialog(null,"Successfully Saved!");
             
         }else{
             
-            JOptionPane.showMessageDialog(null,"Error");
+            JOptionPane.showMessageDialog(null,"Error!");
         }
           
+        remaining_question();
     }//GEN-LAST:event_btn_tyt_targetActionPerformed
 
     private void btn_qcountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_qcountActionPerformed
@@ -1585,8 +1689,112 @@ public class MainPage extends javax.swing.JFrame {
         falsecount.setText(null);
         blankcount.setText(null);
         
+        remaining_question();
         
     }//GEN-LAST:event_btn_qcountActionPerformed
+
+    private void btn_ayt_targetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ayt_targetActionPerformed
+       
+        if(user.getDepId()==1){
+            
+            int amat=0,afizik=0,akimya=0,abiyoloji=0;
+            if(!ayt1.getText().isBlank()){
+            amat=Integer.parseInt(ayt1.getText().trim());}
+            if(!ayt2.getText().isBlank()){
+            afizik=Integer.parseInt(ayt2.getText().trim());}
+            if(!ayt3.getText().isBlank()){
+            akimya=Integer.parseInt(ayt3.getText().trim());}
+            if(!ayt4.getText().isBlank()){
+            abiyoloji=Integer.parseInt(ayt4.getText().trim());}
+            
+            boolean control=user.addSayisalAYTTargetCount(amat, afizik, akimya, abiyoloji);
+            
+            int totalc=amat+afizik+akimya+abiyoloji;
+            
+            totalayt.setText(Integer.toString(totalc));
+            
+         if(control){
+            
+            JOptionPane.showMessageDialog(null,"Successfully Saved!");
+            
+        }else{
+            
+            JOptionPane.showMessageDialog(null,"Error!");
+        }  
+            
+        }
+        else if(user.getDepId()==2){
+            
+            int turkce=0,mat=0,tarih=0,cografya=0,felsefe=0;
+            if(!ayt1.getText().isBlank()){
+            turkce=Integer.parseInt(ayt1.getText().trim());
+            }
+            if(!ayt2.getText().isBlank()){
+            mat=Integer.parseInt(ayt2.getText().trim());
+            }
+            if(!ayt3.getText().isBlank()){
+            tarih=Integer.parseInt(ayt3.getText().trim());
+            }
+            if(!ayt4.getText().isBlank()){
+            cografya=Integer.parseInt(ayt4.getText().trim());
+            }
+            if(!ayt5.getText().isBlank()){
+                
+            felsefe=Integer.parseInt(ayt5.getText().trim());
+            }
+            
+            
+             boolean control=user.addEsitAgirlikAYTTargetCount(turkce,mat, tarih, cografya, felsefe);
+            
+            int totalc=turkce+mat+tarih+cografya+felsefe;
+            
+            totalayt.setText(Integer.toString(totalc));
+            
+         if(control){
+            
+            JOptionPane.showMessageDialog(null,"Successfully Saved!");
+            
+        }else{
+            
+            JOptionPane.showMessageDialog(null,"Error!");
+        }  
+            
+            
+        }
+        
+        else if(user.getDepId()==3){
+            
+            int turkce=0,tarih=0,cografya=0,felsefe=0;
+            if(!ayt1.getText().isBlank()){
+            turkce=Integer.parseInt(ayt1.getText().trim());}
+            if(!ayt4.getText().isBlank()){
+            tarih=Integer.parseInt(ayt4.getText().trim());}
+            if(!ayt2.getText().isBlank()){
+            cografya=Integer.parseInt(ayt2.getText().trim());}
+            if(!ayt3.getText().isBlank()){
+            felsefe=Integer.parseInt(ayt3.getText().trim());}
+            
+             boolean control=user.addSozelAYTTargetCount(turkce,cografya,felsefe,tarih);
+            
+            int totalc=turkce+tarih+cografya+felsefe;
+            
+            totalayt.setText(Integer.toString(totalc));
+            
+         if(control){
+            
+            JOptionPane.showMessageDialog(null,"Successfully Saved!");
+            
+        }else{
+            
+            JOptionPane.showMessageDialog(null,"Error!");
+        }  
+            
+            
+        }
+        
+        remaining_question();
+        
+    }//GEN-LAST:event_btn_ayt_targetActionPerformed
 
     public void ayt_date_calculate(){
         
@@ -1799,6 +2007,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator13;
+    private javax.swing.JSeparator jSeparator14;
     private javax.swing.JSeparator jSeparator16;
     private javax.swing.JSeparator jSeparator17;
     private javax.swing.JSeparator jSeparator18;
@@ -1811,9 +2020,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator24;
     private javax.swing.JSeparator jSeparator25;
     private javax.swing.JSeparator jSeparator26;
-    private javax.swing.JSeparator jSeparator27;
     private javax.swing.JSeparator jSeparator28;
-    private javax.swing.JSeparator jSeparator29;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
@@ -1835,19 +2042,19 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel l5;
     private javax.swing.JComboBox<String> lessonscombo;
     private javax.swing.JTextField name;
-    private javax.swing.JTextField name2;
     private javax.swing.JLabel not1;
     private javax.swing.JLabel not2;
     private javax.swing.JLabel not3;
     private javax.swing.JTextField remainingquestions;
     private javax.swing.JTextField school;
+    private javax.swing.JSeparator sep1;
     private javax.swing.JPanel statistics;
     private javax.swing.JTextField surname;
     private javax.swing.JTextField totalTYT;
+    private javax.swing.JTextField totalayt;
     private javax.swing.JTextField truecount;
     private javax.swing.JTextField tytbiyoloji;
     private javax.swing.JTextField tytcografya;
-    private javax.swing.JTextField tytcografya1;
     private javax.swing.JPanel tytdate;
     private javax.swing.JLabel tytday;
     private javax.swing.JTextField tytdin;
@@ -1857,7 +2064,6 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JTextField tytmatematik;
     private javax.swing.JLabel tytmonth;
     private javax.swing.JTextField tyttarih;
-    private javax.swing.JTextField tyttarih1;
     private javax.swing.JTextField tytturkce;
     // End of variables declaration//GEN-END:variables
 }

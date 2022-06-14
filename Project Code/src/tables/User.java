@@ -2,10 +2,13 @@
 package tables;
 
 import dbConnection.DBConnection;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class User {
@@ -61,7 +64,7 @@ public class User {
         
         int qCount = trueCount+falseCount+blankCount;
         
-        double netCount = trueCount - (falseCount * 0.25);
+        double netCount = trueCount - (falseCount * 0.25) -falseCount;
         
         Date nowtime = new Date();
         DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
@@ -314,8 +317,260 @@ public class User {
         
         
         
-        
     }
+    
+     public boolean addSayisalAYTTargetCount(int matematik,int fizik,int kimya,int biyoloji){
+            
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        
+        try{
+        
+         if(matematik!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2, matematik);
+                   db.psqlquery.setInt(3, 10);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         if(fizik!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2, fizik);
+                   db.psqlquery.setInt(3, 11);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         if(kimya!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2, kimya);
+                   db.psqlquery.setInt(3, 12);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         if(biyoloji!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2, biyoloji);
+                   db.psqlquery.setInt(3, 13);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+          
+             } catch (SQLException ex) {
+                Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);
+                return false;
+            }
+  
+            return true;
+            
+        }
+
+          
+     
+     public boolean addEsitAgirlikAYTTargetCount(int turkce,int matematik,int tarih,int cografya,int felsefe){
+            
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        
+        try{
+        
+         if(turkce!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,turkce);
+                   db.psqlquery.setInt(3, 14);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         if(matematik!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,matematik);
+                   db.psqlquery.setInt(3, 10);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         if(tarih!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,tarih);
+                   db.psqlquery.setInt(3, 17);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         if(cografya!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,cografya);
+                   db.psqlquery.setInt(3, 15);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         
+             if(felsefe!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,felsefe);
+                   db.psqlquery.setInt(3, 16);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+          
+             } catch (SQLException ex) {
+                Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);
+                return false;
+            }
+  
+            return true;
+            
+        }
+        public boolean addSozelAYTTargetCount(int turkce,int cografya,int felsefe,int tarih){
+            
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        
+        try{
+        
+         if(turkce!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,turkce);
+                   db.psqlquery.setInt(3, 14);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         if(tarih!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,tarih);
+                   db.psqlquery.setInt(3, 17);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         if(cografya!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,cografya);
+                   db.psqlquery.setInt(3, 15);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+         
+             if(felsefe!=0){
+                  String query = "INSERT INTO Goals (user_id, qcount, lesson_id, gdate)"
+                                + " VALUES (?, ?, ?, ?)";
+            
+            
+                db.psqlquery = db.con.prepareStatement(query);
+                         
+                   db.psqlquery.setInt(1,getId());
+                   db.psqlquery.setInt(2,felsefe);
+                   db.psqlquery.setInt(3, 16);
+                   db.psqlquery.setString(4, nowtime2);
+            
+           
+                   db.psqlquery.executeUpdate();
+            }
+          
+             } catch (SQLException ex) {
+                Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);
+                return false;
+            }
+  
+            return true;
+            
+        }
+    
     
     public void addSayisal(){
         
@@ -328,8 +583,8 @@ public class User {
     
     public void addSozel(){
         
-        sozel.add("AYT Turkce");
-        sozel.add("AYT Cografya");
+        sozel.add("AYT Türkçe");
+        sozel.add("AYT Coğrafya");
         sozel.add("AYT Felsefe");
         sozel.add("AYT Tarih");
         
@@ -337,12 +592,12 @@ public class User {
     
     public void addTYT(){
         
-        tyt.add("TYT Turkce");
+        tyt.add("TYT Türkçe");
         tyt.add("TYT Matematik");
         tyt.add("TYT Tarih");
-        tyt.add("TYT Cografya");
+        tyt.add("TYT Coğrafya");
         tyt.add("TYT Felsefe");
-        tyt.add("TYT Din Kulturu");
+        tyt.add("TYT Din Kültürü");
         tyt.add("TYT Fizik");
         tyt.add("TYT Kimya");
         tyt.add("TYT Biyoloji");
@@ -351,7 +606,7 @@ public class User {
     
     public void addEsitAgirlik(){
         
-        esitAgirlik.add("AYT Turkce");
+        esitAgirlik.add("AYT Türkçe");
         esitAgirlik.add("AYT Matematik");
         esitAgirlik.add("AYT Tarih");
         esitAgirlik.add("AYT Coğrafya");
