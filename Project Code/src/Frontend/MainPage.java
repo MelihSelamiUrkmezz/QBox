@@ -34,6 +34,13 @@ public class MainPage extends javax.swing.JFrame {
         qapanel();
         remaining_question();
         ayt_function();
+        
+        // panel acildigin gun icersinde kullanici uygulamayi ikinci sefer ucuncu sefer
+        // aciyor olabilir daha onceki o gun icin koydugu toplam target hedefi gormeli
+        // ve ona gore hareket etmeli
+        
+        showTotalAYTtarget();
+        showTotalTYTtarget();
     }
 
     /**
@@ -1448,6 +1455,8 @@ public class MainPage extends javax.swing.JFrame {
     
     public void ayt_function(){
         
+        // turkce karakterler kaldirildi
+        
         if(user.getDepId()==1){ // Sayisal Ogrencisi
             
             lessonscombo.addItem("AYT Matematik");
@@ -1465,12 +1474,12 @@ public class MainPage extends javax.swing.JFrame {
         
         else if(user.getDepId()==3){ // Sozel ogrencisi 
             
-        lessonscombo.addItem("AYT Türkçe");
-        lessonscombo.addItem("AYT Coğrafya");
+        lessonscombo.addItem("AYT Turkce");
+        lessonscombo.addItem("AYT Cografya");
         lessonscombo.addItem("AYT Felsefe");
         lessonscombo.addItem("AYT Tarih"); 
-            l1.setText("AYT Türkçe");
-            l2.setText("AYT Coğrafya");
+            l1.setText("AYT Turkce");
+            l2.setText("AYT Cografya");
             l3.setText("AYT Felsefe");
             l4.setText("AYT Tarih");
             l5.setText("");
@@ -1479,15 +1488,15 @@ public class MainPage extends javax.swing.JFrame {
         
         else if(user.getDepId()==2){ // Esit agirlik ogrencisi
             
-        lessonscombo.addItem ("AYT Türkçe");
+        lessonscombo.addItem ("AYT Turkce");
         lessonscombo.addItem("AYT Matematik");
         lessonscombo.addItem("AYT Tarih");
-        lessonscombo.addItem("AYT Coğrafya");
+        lessonscombo.addItem("AYT Cografya");
         lessonscombo.addItem("AYT Felsefe");
-        l1.setText("AYT Türkçe");
+        l1.setText("AYT Turkce");
             l2.setText("AYT Matematik");
             l3.setText("AYT Tarih");
-            l4.setText("AYT Coğrafya");
+            l4.setText("AYT Cografya");
             l5.setText("AYT Felsefe");
             
             
@@ -1653,9 +1662,9 @@ public class MainPage extends javax.swing.JFrame {
         boolean flag =user.addTYTTargetCount(tytTurkceTarget,tytMatematikTarget,tytTarihTarget,
                 tytCografyaTarget,tytFelsefeTarget,tytDinTarget,tytFizikTarget,tytKimyaTarget,tytBiyolojiTarget);
         
-        int total = user.addTotalTYTtargetCount();
         
-        totalTYT.setText(Integer.toString(total));
+        // function aktardım
+        showTotalTYTtarget();
         
         if(flag){
             
@@ -1667,6 +1676,18 @@ public class MainPage extends javax.swing.JFrame {
         }
           
         remaining_question();
+        
+        // girdilerin 0 lanmasi icin ekleme yaptim
+        
+        tytturkce.setText(null);
+        tytmatematik.setText(null);
+        tyttarih.setText(null);
+        tytcografya.setText(null);
+        tytfelsefe.setText(null);
+        tytdin.setText(null);
+        tytfizik.setText(null);
+        tytkimya.setText(null);
+        tytbiyoloji.setText(null);
     }//GEN-LAST:event_btn_tyt_targetActionPerformed
 
     private void btn_qcountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_qcountActionPerformed
@@ -1718,9 +1739,11 @@ public class MainPage extends javax.swing.JFrame {
             
             boolean control=user.addSayisalAYTTargetCount(amat, afizik, akimya, abiyoloji);
             
-            int totalc=amat+afizik+akimya+abiyoloji;
             
-            totalayt.setText(Integer.toString(totalc));
+            // toteal hesabini boyle yapman veri guncellendiginde yaniltabilir
+            
+            // yeni bir fonksiton tanımladım assagida
+            showTotalAYTtarget();
             
          if(control){
             
@@ -1755,9 +1778,7 @@ public class MainPage extends javax.swing.JFrame {
             
              boolean control=user.addEsitAgirlikAYTTargetCount(turkce,mat, tarih, cografya, felsefe);
             
-            int totalc=turkce+mat+tarih+cografya+felsefe;
-            
-            totalayt.setText(Integer.toString(totalc));
+            showTotalAYTtarget();
             
          if(control){
             
@@ -1785,9 +1806,7 @@ public class MainPage extends javax.swing.JFrame {
             
              boolean control=user.addSozelAYTTargetCount(turkce,cografya,felsefe,tarih);
             
-            int totalc=turkce+tarih+cografya+felsefe;
-            
-            totalayt.setText(Integer.toString(totalc));
+            showTotalAYTtarget();
             
          if(control){
             
@@ -1803,6 +1822,14 @@ public class MainPage extends javax.swing.JFrame {
         
         remaining_question();
         
+        // fld lara null atalım
+        
+        ayt1.setText(null);
+        ayt2.setText(null);
+        ayt3.setText(null);
+        ayt4.setText(null);
+        ayt5.setText(null);
+        
     }//GEN-LAST:event_btn_ayt_targetActionPerformed
 
     private void jLabel43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel43MouseClicked
@@ -1815,6 +1842,22 @@ public class MainPage extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jLabel43MouseClicked
 
+    
+    public void showTotalTYTtarget(){
+        
+        int total = user.addTotalTYTtargetCount();
+        
+        totalTYT.setText(Integer.toString(total));
+    }
+    
+    public void showTotalAYTtarget(){
+        
+        int totalc=user.addTotalAYTtargetCount();
+            
+        totalayt.setText(Integer.toString(totalc));
+        
+    }
+    
     public void ayt_date_calculate(){
         
        String ayt_date="19/06/2022";
