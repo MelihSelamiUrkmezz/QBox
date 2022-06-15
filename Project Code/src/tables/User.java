@@ -57,14 +57,14 @@ public class User {
     public boolean addQuestionCount(String lessonName , int trueCount, int falseCount, int blankCount){
         
         String get_id_query = "SELECT id"
-                            + " FROM Lessons"
-                            + " WHERE Lessons = '"+lessonName+"'";
+                            + " FROM Lessons l"
+                            + " WHERE l.Lessons = '"+lessonName+"'";
         
         int lessonId = 0;
         
         int qCount = trueCount+falseCount+blankCount;
         
-        double netCount = trueCount - (falseCount * 0.25) -falseCount;
+        double netCount = trueCount - (falseCount * 0.25);
         
         Date nowtime = new Date();
         DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
@@ -89,7 +89,8 @@ public class User {
             return false;
         }
         
-        
+        System.out.println("lesson name : "+lessonName);
+        System.out.println("lesson id = "+lessonId);
         
         
         String main_query = "INSERT INTO Questions (user_id, lessons_id, qcount, truec, falsec, emptyc, netc, udate)"
@@ -130,10 +131,12 @@ public class User {
         DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
         String nowtime2=df.format(nowtime);
         
-        String query = "SELECT SUM(qcount) as sum"
-                       + " FROM Goals"
-                        + " WHERE user_id = "+getId()+" AND"
-                        + " gdate = '"+nowtime2+"'";
+        // query sadece tyt leri alacak sekilde guncellendi
+        
+        String query = "SELECT SUM(g.qcount) as sum"
+                       + " FROM Goals g"
+                        + " WHERE g.user_id = "+getId()+" AND"
+                        + " g.lesson_id < 10 AND gdate = '"+nowtime2+"'";
         int total = 0;
         try {
             
@@ -149,7 +152,43 @@ public class User {
             
         } catch (Exception e) {
             
-            System.out.println("addQuestionCount ' da id alinirken hata olustu");
+            System.out.println("addTotalTYTtargetCount ' da  hata olustu veya veri bulunmadi 0");
+            
+            return 0;
+        }
+   
+    }
+    
+    // ayt icin eklendi
+    
+    public int addTotalAYTtargetCount(){
+        
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        
+        // query sadece tyt leri alacak sekilde guncellendi
+        
+        String query = "SELECT SUM(g.qcount) as sum"
+                       + " FROM Goals g"
+                        + " WHERE g.user_id = "+getId()+" AND"
+                        + " g.lesson_id > 9 AND gdate = '"+nowtime2+"'";
+        int total = 0;
+        try {
+            
+             db.sqlquery = db.con.createStatement();
+             db.rs = db.sqlquery.executeQuery(query);
+             
+             if(db.rs.next()){
+                 
+                  total = db.rs.getInt("sum");
+             }
+             
+             return total;
+            
+        } catch (Exception e) {
+            
+            System.out.println("addTotalAYTtargetCount ' da  hata olustu veya veri bulunmadi 0");
             
             return 0;
         }
