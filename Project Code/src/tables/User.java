@@ -247,7 +247,7 @@ public class User {
         
         int qCount = trueCount+falseCount+blankCount;
         
-        double netCount = trueCount - (falseCount * 0.25);
+        double netCount = trueCount - (falseCount * 0.25)-falseCount; // restore
         
         Date nowtime = new Date();
         DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
