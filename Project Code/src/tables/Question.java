@@ -10,6 +10,15 @@ public class Question {
     
     public Question(){
         
+        this.id = 0;
+        this.qCount = 0;
+        this.tCount = 0;
+        this.fCount = 0;
+        this.eCount = 0;
+        this.userId = 0;
+        this.lessonId = 0;
+        this.net = 0.0;
+        
     }
 
     public Question(int id, int qCount, int tCount, int fCount, int eCount, int userId, int lessonId, double net, String date) {
