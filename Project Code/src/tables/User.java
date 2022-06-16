@@ -54,6 +54,189 @@ public class User {
     
       // methods...
     
+    
+    
+    // bu metod bize o gun icersindeki farklı derslerle ilgili
+    // toplam soru bilgilerini icerir
+    
+    public ArrayList<Question> getTotalLessonsQuestionNowCount(){
+        
+        
+        ArrayList<Question> questions = new ArrayList<Question>();
+        
+        
+        
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        
+        
+        
+        String query = "SELECT user_id , lessons_id , udate , SUM(qcount) AS qcount , SUM(truec) AS truec ,"
+                       + " SUM(falsec) AS falsec , SUM(emptyc) AS emptyc , SUM(netc) AS netc "
+                       + " FROM Questions"
+                       + " WHERE user_id = "+getId()+" AND udate = '"+nowtime2+"'"
+                        + " GROUP BY user_id , lessons_id , udate";
+        
+        
+        try {
+            
+            db.sqlquery = db.con.createStatement();
+            db.rs = db.sqlquery.executeQuery(query);
+            
+            while(db.rs.next()){
+                
+                Question q = new Question();
+                
+                q.setDate(db.rs.getString("udate"));
+                q.setLessonId(db.rs.getInt("lessons_id"));
+                q.setNet(db.rs.getDouble("netc"));
+                q.setUserId(db.rs.getInt("user_id"));
+                q.seteCount(db.rs.getInt("emptyc"));
+                q.setfCount(db.rs.getInt("falsec"));
+                q.setqCount(db.rs.getInt("qcount"));
+                q.settCount(db.rs.getInt("truec"));
+                
+                
+               questions.add(q);
+                
+            }
+            
+        } catch (Exception e) {
+            
+            e.printStackTrace();
+            
+            System.out.println("getTotalLessonsQuestionNowCount ' da hata var ya da sorgu null dondu");
+            
+            return  null;
+        }
+                
+    
+        return questions;
+        
+    }
+    
+    // gecmisten bu gune gun icinde cozdugu toplam soru sayisini verir
+    
+    public ArrayList<Question> getDeeptoHighTotalQuestionsCount(){
+        
+        
+        ArrayList<Question> questions = new ArrayList<Question>();
+        
+        
+        
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        
+        
+        
+        String query = "SELECT user_id , udate , SUM(qcount)"               
+                       + " FROM Questions"
+                       + " WHERE user_id = "+getId()
+                        + " GROUP BY user_id , udate";
+        
+        
+        try {
+            
+            db.sqlquery = db.con.createStatement();
+            db.rs = db.sqlquery.executeQuery(query);
+            
+            while(db.rs.next()){
+                
+                Question q = new Question();
+                
+                q.setDate(db.rs.getString("udate"));
+               // q.setLessonId(db.rs.getInt("lessons_id"));
+               // q.setNet(db.rs.getDouble("netc"));
+                q.setUserId(db.rs.getInt("user_id"));
+               // q.seteCount(db.rs.getInt("emptyc"));
+               // q.setfCount(db.rs.getInt("falsec"));
+                q.setqCount(db.rs.getInt("qcount"));
+               // q.settCount(db.rs.getInt("truec"));
+                
+                
+               questions.add(q);
+                
+            }
+            
+        } catch (Exception e) {
+            
+            e.printStackTrace();
+            
+            System.out.println("getDeeptoHighTotalQuestionsCount ' da hata var ya da sorgu null dondu");
+            
+            return  null;
+        }
+                
+    
+        return questions;
+        
+    } 
+    
+    
+    // gunluk targetların dagilimini verecek metod
+    
+    public ArrayList<Goal> getTotalLessonsGoalNowCount(){
+        
+        
+        ArrayList<Goal> goals = new ArrayList<Goal>();
+        
+        
+        
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        
+        
+        
+        String query = "SELECT user_id , lesson_id , gdate , SUM(qcount) AS qcount "
+                       + " FROM Goals"
+                       + " WHERE user_id = "+getId()+" AND gdate = '"+nowtime2+"'"
+                        + " GROUP BY user_id , lesson_id , gdate";
+        
+        
+        try {
+            
+            db.sqlquery = db.con.createStatement();
+            db.rs = db.sqlquery.executeQuery(query);
+            
+            while(db.rs.next()){
+                
+                Goal q = new Goal();
+                
+                
+                q.setLesson_id(db.rs.getInt("lessons_id"));
+                
+                q.setUserId(db.rs.getInt("user_id"));
+                
+                q.setqCount(db.rs.getInt("qcount"));
+                
+                q.setGdate(db.rs.getString("gdate"));
+                
+                
+                
+               goals.add(q);
+                
+            }
+            
+        } catch (Exception e) {
+            
+            e.printStackTrace();
+            
+            System.out.println("getTotalLessonsGoalNowCount ' da hata var ya da sorgu null dondu");
+            
+            return  null;
+        }
+                
+    
+        return goals;
+        
+    }
+    
+    
+    
+    
     public boolean addQuestionCount(String lessonName , int trueCount, int falseCount, int blankCount){
         
         String get_id_query = "SELECT id"
