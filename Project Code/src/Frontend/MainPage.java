@@ -13,7 +13,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import tables.*;
 import java.sql.*;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -23,6 +25,9 @@ public class MainPage extends javax.swing.JFrame {
 
     
     dbConnection.DBConnection db=new dbConnection.DBConnection();
+    
+    DefaultTableModel formalite_model = null;
+    
     static User user = new User();
     public MainPage(User user) {
         
@@ -41,6 +46,12 @@ public class MainPage extends javax.swing.JFrame {
         
         showTotalAYTtarget();
         showTotalTYTtarget();
+        
+        // deneme amacli table
+        
+        formalite_model = (DefaultTableModel) formalite_table.getModel();
+        showCompare();
+        
     }
 
     /**
@@ -105,6 +116,8 @@ public class MainPage extends javax.swing.JFrame {
         PnlArrangement = new javax.swing.JPanel();
         kGradientPanel3 = new keeptoo.KGradientPanel();
         jLabel8 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        formalite_table = new javax.swing.JTable();
         PnlQA = new javax.swing.JPanel();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         jLabel18 = new javax.swing.JLabel();
@@ -630,25 +643,39 @@ public class MainPage extends javax.swing.JFrame {
         kGradientPanel3.setkEndColor(new java.awt.Color(0, 0, 204));
         kGradientPanel3.setkGradientFocus(1200);
         kGradientPanel3.setkStartColor(new java.awt.Color(153, 0, 153));
+        kGradientPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setText("Arrangement");
+        jLabel8.setText("Formalite");
+        kGradientPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, -1, -1));
 
-        javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
-        kGradientPanel3.setLayout(kGradientPanel3Layout);
-        kGradientPanel3Layout.setHorizontalGroup(
-            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                .addGap(379, 379, 379)
-                .addComponent(jLabel8)
-                .addContainerGap(451, Short.MAX_VALUE))
-        );
-        kGradientPanel3Layout.setVerticalGroup(
-            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addComponent(jLabel8)
-                .addContainerGap(721, Short.MAX_VALUE))
-        );
+        formalite_table.setForeground(new java.awt.Color(102, 102, 102));
+        formalite_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "sequence", "name", "surname", "school", "total_questions", "total_net"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(formalite_table);
+        if (formalite_table.getColumnModel().getColumnCount() > 0) {
+            formalite_table.getColumnModel().getColumn(0).setResizable(false);
+            formalite_table.getColumnModel().getColumn(1).setResizable(false);
+            formalite_table.getColumnModel().getColumn(2).setResizable(false);
+            formalite_table.getColumnModel().getColumn(3).setResizable(false);
+            formalite_table.getColumnModel().getColumn(4).setResizable(false);
+            formalite_table.getColumnModel().getColumn(5).setResizable(false);
+        }
+
+        kGradientPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 580, 250));
 
         javax.swing.GroupLayout PnlArrangementLayout = new javax.swing.GroupLayout(PnlArrangement);
         PnlArrangement.setLayout(PnlArrangementLayout);
@@ -1198,9 +1225,9 @@ public class MainPage extends javax.swing.JFrame {
                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kGradientPanel6Layout.createSequentialGroup()
                         .addGap(57, 57, 57)
-                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel28)
-                            .addComponent(jLabel29)))
+                        .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel28)))
                     .addGroup(kGradientPanel6Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(remainingquestions, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1385,6 +1412,27 @@ public class MainPage extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jLabel2MouseClicked
 
+    
+    public void showCompare(){
+        
+        formalite_model.setRowCount(0);
+        
+        ArrayList <Compare> compare_list = new ArrayList<Compare>();
+        
+        compare_list = user.getCompareList("All");
+        
+        if(compare_list!=null){
+            
+            for(Compare compare : compare_list){
+                
+                Object [] values = {compare.getSequence(),compare.getName(),compare.getSurName(),compare.getSchool(),compare.getQcount(),compare.getNetc()};
+                
+                formalite_model.addRow(values);
+            }
+            
+        }
+    }
+    
     public void qapanel(){
         
         Color color=new Color(60,63,65);
@@ -1974,6 +2022,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JTextField department;
     private javax.swing.JTextField email;
     private javax.swing.JTextField falsecount;
+    private javax.swing.JTable formalite_table;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2024,6 +2073,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
