@@ -78,14 +78,15 @@ public class User {
         
         String query="";
         
-        if(kind.equals("School")){
+        
+        if(kind.equals("All Users")){
+            
+            query = query1;
+        }
+        else{
             
             query = query2;
             
-        }
-        else if(kind.equals("All")){
-            
-            query = query1;
         }
         
         
