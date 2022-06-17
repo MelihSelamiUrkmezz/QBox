@@ -7,6 +7,7 @@ package Frontend;
 import com.raven.chart.ModelChart;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Font;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -17,6 +18,8 @@ import tables.*;
 import java.sql.*;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -31,6 +34,9 @@ public class MainPage extends javax.swing.JFrame {
 
     
     dbConnection.DBConnection db=new dbConnection.DBConnection();
+    
+    DefaultTableModel formalite_model = null;
+    
     static User user = new User();
     public MainPage(User user) {
         
@@ -51,6 +57,14 @@ public class MainPage extends javax.swing.JFrame {
         
         showTotalAYTtarget();
         showTotalTYTtarget();
+        
+        // deneme amacli table
+        
+        formalite_model = (DefaultTableModel) formalite_table.getModel();
+        showCompare("All Users");
+        
+        showCompareOwnInformation();
+        settingTable();
         daily_rate_circle();
         lastsixmonths();
         linechart();
@@ -124,6 +138,7 @@ public class MainPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -188,6 +203,34 @@ public class MainPage extends javax.swing.JFrame {
         PnlArrangement = new javax.swing.JPanel();
         kGradientPanel3 = new keeptoo.KGradientPanel();
         jLabel8 = new javax.swing.JLabel();
+        lbl_sequence = new javax.swing.JLabel();
+        jSeparator27 = new javax.swing.JSeparator();
+        jLabel48 = new javax.swing.JLabel();
+        lbl_name = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jSeparator29 = new javax.swing.JSeparator();
+        jLabel51 = new javax.swing.JLabel();
+        jSeparator30 = new javax.swing.JSeparator();
+        jLabel52 = new javax.swing.JLabel();
+        lbl_surname = new javax.swing.JLabel();
+        jSeparator31 = new javax.swing.JSeparator();
+        jLabel54 = new javax.swing.JLabel();
+        lbl_school = new javax.swing.JLabel();
+        jSeparator32 = new javax.swing.JSeparator();
+        jLabel56 = new javax.swing.JLabel();
+        lbl_tq = new javax.swing.JLabel();
+        jSeparator33 = new javax.swing.JSeparator();
+        lbl_tn = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jSeparator34 = new javax.swing.JSeparator();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jSeparator35 = new javax.swing.JSeparator();
+        radioAll = new javax.swing.JRadioButton();
+        RadioSchool = new javax.swing.JRadioButton();
+        btn_radio = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        formalite_table = new javax.swing.JTable();
         PnlQA = new javax.swing.JPanel();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         jLabel18 = new javax.swing.JLabel();
@@ -801,31 +844,153 @@ public class MainPage extends javax.swing.JFrame {
         kGradientPanel3.setkEndColor(new java.awt.Color(0, 0, 204));
         kGradientPanel3.setkGradientFocus(1200);
         kGradientPanel3.setkStartColor(new java.awt.Color(153, 0, 153));
+        kGradientPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setText("Arrangement");
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sports-trophy64.png"))); // NOI18N
+        kGradientPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 500, -1, 70));
 
-        javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
-        kGradientPanel3.setLayout(kGradientPanel3Layout);
-        kGradientPanel3Layout.setHorizontalGroup(
-            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                .addGap(379, 379, 379)
-                .addComponent(jLabel8)
-                .addContainerGap(451, Short.MAX_VALUE))
-        );
-        kGradientPanel3Layout.setVerticalGroup(
-            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addComponent(jLabel8)
-                .addContainerGap(721, Short.MAX_VALUE))
-        );
+        lbl_sequence.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_sequence.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_sequence.setText("1");
+        kGradientPanel3.add(lbl_sequence, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, 190, -1));
+        kGradientPanel3.add(jSeparator27, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 270, 10));
+
+        jLabel48.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel48.setText("Comparison Type");
+        kGradientPanel3.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 370, -1, -1));
+
+        lbl_name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_name.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_name.setText("Temp");
+        kGradientPanel3.add(lbl_name, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 460, 220, -1));
+
+        jLabel50.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel50.setText("Sequence :");
+        kGradientPanel3.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 420, -1, -1));
+        kGradientPanel3.add(jSeparator29, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 440, 270, 10));
+
+        jLabel51.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel51.setText("Name :");
+        kGradientPanel3.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 460, -1, -1));
+        kGradientPanel3.add(jSeparator30, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 480, 270, 10));
+
+        jLabel52.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel52.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel52.setText("Surname :");
+        kGradientPanel3.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 500, -1, -1));
+
+        lbl_surname.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_surname.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_surname.setText("Temp");
+        kGradientPanel3.add(lbl_surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, 200, -1));
+        kGradientPanel3.add(jSeparator31, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 640, 270, 10));
+
+        jLabel54.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel54.setText("School :");
+        kGradientPanel3.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 540, -1, -1));
+
+        lbl_school.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_school.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_school.setText("Temp");
+        kGradientPanel3.add(lbl_school, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 540, 210, -1));
+        kGradientPanel3.add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 520, 270, 10));
+
+        jLabel56.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel56.setText("Total Questions : ");
+        kGradientPanel3.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 580, -1, -1));
+
+        lbl_tq.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_tq.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_tq.setText("100");
+        kGradientPanel3.add(lbl_tq, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 580, 150, -1));
+        kGradientPanel3.add(jSeparator33, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 560, 270, 10));
+
+        lbl_tn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbl_tn.setForeground(new java.awt.Color(200, 204, 255));
+        lbl_tn.setText("86.75");
+        kGradientPanel3.add(lbl_tn, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 620, 190, -1));
+
+        jLabel59.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel59.setText("Total Net : ");
+        kGradientPanel3.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 620, -1, -1));
+        kGradientPanel3.add(jSeparator34, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, 270, 10));
+
+        jLabel60.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel60.setText("INFORMATION");
+        kGradientPanel3.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 380, -1, -1));
+
+        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sports-trophy64.png"))); // NOI18N
+        kGradientPanel3.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, -1, 70));
+        kGradientPanel3.add(jSeparator35, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 270, 10));
+
+        buttonGroup1.add(radioAll);
+        radioAll.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        radioAll.setForeground(new java.awt.Color(200, 204, 255));
+        radioAll.setText("All Users");
+        radioAll.setOpaque(false);
+        kGradientPanel3.add(radioAll, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 500, 110, -1));
+
+        buttonGroup1.add(RadioSchool);
+        RadioSchool.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        RadioSchool.setForeground(new java.awt.Color(200, 204, 255));
+        RadioSchool.setText("School Users");
+        RadioSchool.setOpaque(false);
+        kGradientPanel3.add(RadioSchool, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 540, -1, -1));
+
+        btn_radio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_radio.setForeground(new java.awt.Color(200, 204, 255));
+        btn_radio.setText("Approve");
+        btn_radio.setOpaque(false);
+        btn_radio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_radioActionPerformed(evt);
+            }
+        });
+        kGradientPanel3.add(btn_radio, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 600, -1, -1));
+
+        formalite_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "sequence", "name", "surname", "school", "total_question", "total_net"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        formalite_table.setSelectionBackground(new java.awt.Color(153, 0, 153));
+        jScrollPane1.setViewportView(formalite_table);
+        if (formalite_table.getColumnModel().getColumnCount() > 0) {
+            formalite_table.getColumnModel().getColumn(0).setResizable(false);
+            formalite_table.getColumnModel().getColumn(1).setResizable(false);
+            formalite_table.getColumnModel().getColumn(2).setResizable(false);
+            formalite_table.getColumnModel().getColumn(3).setResizable(false);
+            formalite_table.getColumnModel().getColumn(5).setResizable(false);
+        }
+
+        kGradientPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 860, 290));
 
         javax.swing.GroupLayout PnlArrangementLayout = new javax.swing.GroupLayout(PnlArrangement);
         PnlArrangement.setLayout(PnlArrangementLayout);
         PnlArrangementLayout.setHorizontalGroup(
             PnlArrangementLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 869, Short.MAX_VALUE)
         );
         PnlArrangementLayout.setVerticalGroup(
             PnlArrangementLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1555,6 +1720,82 @@ public class MainPage extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_jLabel2MouseClicked
+
+    
+    
+    // table ayarlari
+    
+    public void settingTable(){
+        
+        formalite_table.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD,12));
+        formalite_table.getTableHeader().setOpaque(false);
+        formalite_table.getTableHeader().setBackground(Color.BLACK);
+        formalite_table.getTableHeader().setForeground(new Color(200,204,255)); //bizim renk
+        
+        formalite_table.setRowHeight(25);
+        
+        DefaultTableCellRenderer head_render = new DefaultTableCellRenderer(); 
+        
+        head_render.setBackground(new Color(204,153,255));
+        formalite_table.getTableHeader().setDefaultRenderer(head_render);
+        
+        
+    }
+    
+    
+    // karsilastirmalari tabloya atar
+    public void showCompare(String value){
+        
+        formalite_model.setRowCount(0);
+        
+        ArrayList <Compare> compare_list = new ArrayList<Compare>();
+        
+        compare_list = user.getCompareList(value);
+        
+        if(compare_list!=null){
+            
+            for(Compare compare : compare_list){
+                
+                Object [] values = {compare.getSequence(),compare.getName(),compare.getSurName(),compare.getSchool(),compare.getQcount(),compare.getNetc()};
+                
+                formalite_model.addRow(values);
+            }
+            
+        }
+    }
+    
+    // kisinin kendi siralamasini belirtir
+    
+    public void showCompareOwnInformation(){
+        
+        ArrayList<Compare> compare_list = new ArrayList<Compare>();
+        
+        compare_list = user.getCompareList("All Users");
+        
+        if(compare_list!=null){
+            
+            for(Compare compare : compare_list){
+                
+                if(user.getId() == compare.getUser_id()){
+                    
+                    lbl_name.setText(compare.getName());
+                    lbl_surname.setText(compare.getSurName());
+                    lbl_sequence.setText(Integer.toString(compare.getSequence()));
+                    lbl_school.setText(compare.getSchool());
+                    lbl_tn.setText(Double.toString(compare.getNetc()));
+                    lbl_tq.setText(Integer.toString(compare.getQcount()));
+                    
+                    break;
+                    
+                }
+            }
+        }
+        
+        
+        
+        
+    }
+    
     
     public void showGoalPieChart(){
         
@@ -2079,6 +2320,21 @@ public class MainPage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tyttarihActionPerformed
 
+
+    private void btn_radioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_radioActionPerformed
+        // TODO add your handling code here:
+        
+        if(radioAll.isSelected()){
+            
+             showCompare("All Users");
+        }
+        else if(RadioSchool.isSelected()){
+            
+            showCompare(user.getSchool());
+            
+        }
+    }//GEN-LAST:event_btn_radioActionPerformed
+
     public void lastsixmonths(){
        
         Date nowtime = new Date();
@@ -2300,6 +2556,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel PnlQ;
     private javax.swing.JPanel PnlQA;
     private javax.swing.JPanel PnlStatistics;
+    private javax.swing.JRadioButton RadioSchool;
     private javax.swing.JTabbedPane TabbedMenu;
     private javax.swing.JTextField ayt1;
     private javax.swing.JTextField ayt2;
@@ -2312,12 +2569,15 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JTextField blankcount;
     private javax.swing.JButton btn_ayt_target;
     private javax.swing.JButton btn_qcount;
+    private javax.swing.JButton btn_radio;
     private javax.swing.JButton btn_tyt_target;
+    private javax.swing.ButtonGroup buttonGroup1;
     private com.raven.chart.Chart chart1;
     private javax.swing.JTextField classes;
     private javax.swing.JTextField department;
     private javax.swing.JTextField email;
     private javax.swing.JTextField falsecount;
+    private javax.swing.JTable formalite_table;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2363,7 +2623,15 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -2371,6 +2639,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
@@ -2393,8 +2662,16 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator24;
     private javax.swing.JSeparator jSeparator25;
     private javax.swing.JSeparator jSeparator26;
+    private javax.swing.JSeparator jSeparator27;
     private javax.swing.JSeparator jSeparator28;
+    private javax.swing.JSeparator jSeparator29;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator30;
+    private javax.swing.JSeparator jSeparator31;
+    private javax.swing.JSeparator jSeparator32;
+    private javax.swing.JSeparator jSeparator33;
+    private javax.swing.JSeparator jSeparator34;
+    private javax.swing.JSeparator jSeparator35;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
@@ -2413,12 +2690,19 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel l3;
     private javax.swing.JLabel l4;
     private javax.swing.JLabel l5;
+    private javax.swing.JLabel lbl_name;
+    private javax.swing.JLabel lbl_school;
+    private javax.swing.JLabel lbl_sequence;
+    private javax.swing.JLabel lbl_surname;
+    private javax.swing.JLabel lbl_tn;
+    private javax.swing.JLabel lbl_tq;
     private javax.swing.JComboBox<String> lessonscombo;
     private com.raven.chart.LineChart lineChart2;
     private javax.swing.JTextField name;
     private javax.swing.JLabel not1;
     private javax.swing.JLabel not2;
     private javax.swing.JLabel not3;
+    private javax.swing.JRadioButton radioAll;
     private javax.swing.JPanel piece;
     private ProgressCircle.Progress progress1;
     private ProgressCircle.Progress progress2;

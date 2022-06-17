@@ -55,6 +55,82 @@ public class User {
       // methods...
     
     
+    // secili okuldaki ya da herkesi iceren bilgi soru
+    // ve net sayilarini sıraya sokan bir methods
+    
+    
+    public ArrayList<Compare> getCompareList (String kind){
+        
+        ArrayList <Compare> compare_list = new ArrayList<Compare>();
+         
+        String query1 = "SELECT u.id, u.name , u.surname,u.school, SUM(q.qcount) AS qcount , SUM(q.netc) AS netc "
+                      + " FROM User u  , Questions q "
+                      + " WHERE u.id = q.user_id "
+                      + " GROUP BY u.id, u.name, u.surname, u.school "
+                      + " ORDER BY netc DESC";
+        
+        String query2 = "SELECT u.id, u.name , u.surname,u.school, SUM(q.qcount) AS qcount , SUM(q.netc) AS netc "
+                      + " FROM User u  , Questions q "
+                      + " WHERE u.id = q.user_id AND u.school = '"+kind+"' "
+                      + " GROUP BY u.id, u.name, u.surname, u.school "
+                      + " ORDER BY netc DESC";
+        
+        
+        String query="";
+        
+        
+        if(kind.equals("All Users")){
+            
+            query = query1;
+        }
+        else{
+            
+            query = query2;
+            
+        }
+        
+        
+        int i = 1; // elimizle sira verecegiz :)
+        
+        try {
+            
+            db.sqlquery = db.con.createStatement();
+            db.rs = db.sqlquery.executeQuery(query);
+            
+            while(db.rs.next()){
+                
+                Compare compare = new Compare();
+                
+                compare.setName(db.rs.getString("name"));
+                compare.setNetc(db.rs.getDouble("netc"));
+                compare.setQcount(db.rs.getInt("qcount"));
+                compare.setSchool(db.rs.getString("school"));
+                compare.setSequence(i);
+                i=i+1;
+                compare.setSurName(db.rs.getString("surname"));
+                compare.setUser_id(db.rs.getInt("id"));
+                
+                
+                compare_list.add(compare);
+                
+                
+            }
+            
+            return  compare_list;
+            
+        } catch (Exception e) {
+            
+            e.printStackTrace();
+            
+            System.out.println("getCompareList ' da bir hata olustu");
+            
+            return null;
+        }
+        
+       
+    } 
+    
+    
     
     // bu metod bize o gun icersindeki farklı derslerle ilgili
     // toplam soru bilgilerini icerir
@@ -128,7 +204,6 @@ public class User {
         Date nowtime = new Date();
         DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
         String nowtime2=df.format(nowtime);
-        
         
         
         String query = "SELECT user_id , udate , SUM(qcount) AS qcount"               
