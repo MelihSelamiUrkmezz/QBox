@@ -131,7 +131,7 @@ public class User {
         
         
         
-        String query = "SELECT user_id , udate , SUM(qcount)"               
+        String query = "SELECT user_id , udate , SUM(qcount) AS qcount"               
                        + " FROM Questions"
                        + " WHERE user_id = "+getId()
                         + " GROUP BY user_id , udate";
@@ -206,7 +206,7 @@ public class User {
                 Goal q = new Goal();
                 
                 
-                q.setLesson_id(db.rs.getInt("lessons_id"));
+                q.setLesson_id(db.rs.getInt("lesson_id"));
                 
                 q.setUserId(db.rs.getInt("user_id"));
                 
