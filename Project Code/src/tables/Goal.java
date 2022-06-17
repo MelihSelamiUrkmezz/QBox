@@ -4,7 +4,7 @@ package tables;
 
 public class Goal {
     
-    private int id, qCount, userId, lesson_id;
+    private int id=0, qCount=0, userId=0, lesson_id=0;
     
     private  String gdate;
 
