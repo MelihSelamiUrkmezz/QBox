@@ -50,6 +50,7 @@ public class MainPage extends javax.swing.JFrame {
         ayt_function();
         progress1.start();
         successrate();
+        notification();
         
         // panel acildigin gun icersinde kullanici uygulamayi ikinci sefer ucuncu sefer
         // aciyor olabilir daha onceki o gun icin koydugu toplam target hedefi gormeli
@@ -123,9 +124,6 @@ public class MainPage extends javax.swing.JFrame {
                lineChart2.addData(new ModelChart(months[month3], new double[]{target_count}));
                   count++;
                   month3++;
-                
-            
-            
             
             
         }
@@ -205,7 +203,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         lbl_sequence = new javax.swing.JLabel();
         jSeparator27 = new javax.swing.JSeparator();
-        jLabel48 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
         lbl_name = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         jSeparator29 = new javax.swing.JSeparator();
@@ -228,15 +226,41 @@ public class MainPage extends javax.swing.JFrame {
         jSeparator35 = new javax.swing.JSeparator();
         radioAll = new javax.swing.JRadioButton();
         RadioSchool = new javax.swing.JRadioButton();
-        btn_radio = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         formalite_table = new javax.swing.JTable();
+        jPanel8 = new javax.swing.JPanel();
+        btn_radio = new javax.swing.JButton();
         PnlQA = new javax.swing.JPanel();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         jLabel18 = new javax.swing.JLabel();
         PnlInfo = new javax.swing.JPanel();
         kGradientPanel1 = new keeptoo.KGradientPanel();
+        jLabel55 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
         PnlQ = new javax.swing.JPanel();
         kGradientPanel6 = new keeptoo.KGradientPanel();
         jLabel27 = new javax.swing.JLabel();
@@ -830,7 +854,7 @@ public class MainPage extends javax.swing.JFrame {
         PnlStatistics.setLayout(PnlStatisticsLayout);
         PnlStatisticsLayout.setHorizontalGroup(
             PnlStatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
+            .addComponent(kGradientPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 912, Short.MAX_VALUE)
         );
         PnlStatisticsLayout.setVerticalGroup(
             PnlStatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -855,10 +879,10 @@ public class MainPage extends javax.swing.JFrame {
         kGradientPanel3.add(lbl_sequence, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, 190, -1));
         kGradientPanel3.add(jSeparator27, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, 270, 10));
 
-        jLabel48.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel48.setForeground(new java.awt.Color(200, 204, 255));
-        jLabel48.setText("Comparison Type");
-        kGradientPanel3.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 370, -1, -1));
+        jLabel53.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel53.setText("Comparison Type");
+        kGradientPanel3.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, -1, -1));
 
         lbl_name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbl_name.setForeground(new java.awt.Color(200, 204, 255));
@@ -934,27 +958,16 @@ public class MainPage extends javax.swing.JFrame {
         radioAll.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         radioAll.setForeground(new java.awt.Color(200, 204, 255));
         radioAll.setText("All Users");
-        radioAll.setOpaque(false);
         kGradientPanel3.add(radioAll, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 500, 110, -1));
 
         buttonGroup1.add(RadioSchool);
         RadioSchool.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         RadioSchool.setForeground(new java.awt.Color(200, 204, 255));
         RadioSchool.setText("School Users");
-        RadioSchool.setOpaque(false);
         kGradientPanel3.add(RadioSchool, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 540, -1, -1));
 
-        btn_radio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btn_radio.setForeground(new java.awt.Color(200, 204, 255));
-        btn_radio.setText("Approve");
-        btn_radio.setOpaque(false);
-        btn_radio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_radioActionPerformed(evt);
-            }
-        });
-        kGradientPanel3.add(btn_radio, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 600, -1, -1));
-
+        formalite_table.setBackground(new java.awt.Color(200, 204, 255));
+        formalite_table.setForeground(new java.awt.Color(60, 63, 65));
         formalite_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -984,7 +997,30 @@ public class MainPage extends javax.swing.JFrame {
             formalite_table.getColumnModel().getColumn(5).setResizable(false);
         }
 
-        kGradientPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 860, 290));
+        kGradientPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 860, 290));
+
+        btn_radio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_radio.setForeground(new java.awt.Color(200, 204, 255));
+        btn_radio.setText("Approve");
+        btn_radio.setContentAreaFilled(false);
+        btn_radio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_radioActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btn_radio, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btn_radio, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        kGradientPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 600, -1, 30));
 
         javax.swing.GroupLayout PnlArrangementLayout = new javax.swing.GroupLayout(PnlArrangement);
         PnlArrangement.setLayout(PnlArrangementLayout);
@@ -1038,25 +1074,169 @@ public class MainPage extends javax.swing.JFrame {
         kGradientPanel1.setkEndColor(new java.awt.Color(0, 0, 204));
         kGradientPanel1.setkGradientFocus(1200);
         kGradientPanel1.setkStartColor(new java.awt.Color(153, 0, 153));
+        kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setText("INFO");
+        jLabel55.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel55.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel55.setText("What Does Our App Do?");
+        kGradientPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, -1, -1));
 
-        javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
-        kGradientPanel1.setLayout(kGradientPanel1Layout);
-        kGradientPanel1Layout.setHorizontalGroup(
-            kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(421, 421, 421)
-                .addComponent(jLabel6)
-                .addContainerGap(452, Short.MAX_VALUE))
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/student2.png"))); // NOI18N
+        kGradientPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 130, 150));
+
+        jLabel57.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel57.setText("<html>This application is an application that allows students to view their monthly progress while preparing for the exam,<br/> compare them with other friends according to their monthly progress, learn their scores according to the test results entered,<br/> and set daily goals for themselves and complete their goals.</html>");
+        kGradientPanel1.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 680, 120));
+
+        jLabel58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/quality-control.png"))); // NOI18N
+        kGradientPanel1.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 290, 130, 160));
+
+        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/data-analysis (2).png"))); // NOI18N
+        kGradientPanel1.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 150, 170));
+
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/medal (1).png"))); // NOI18N
+        kGradientPanel1.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 290, 140, 170));
+
+        jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/exam (1).png"))); // NOI18N
+        kGradientPanel1.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 130, 170));
+
+        jLabel65.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel65.setText(" Create and complete the plan!");
+        kGradientPanel1.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 480, 210, -1));
+
+        jLabel66.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel66.setText(" See your stats!");
+        kGradientPanel1.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, 160, -1));
+
+        jLabel67.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel67.setText("Race with your friends!");
+        kGradientPanel1.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 480, 160, -1));
+
+        jLabel68.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel68.setText(" Calculate your exam score!");
+        kGradientPanel1.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, 190, -1));
+
+        jLabel69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/programmer.png"))); // NOI18N
+        kGradientPanel1.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, 70, 80));
+
+        jLabel70.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel70.setText("Developers!");
+        kGradientPanel1.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 520, 160, 70));
+
+        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/user2.png"))); // NOI18N
+
+        jLabel73.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel73.setText("Taha Pek");
+
+        jLabel74.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel74.setText("Student at Kocaeli University.");
+
+        jLabel75.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel75.setText("Contact: tahapek5454@gmail.com");
+
+        jLabel77.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel77.setText("https://github.com/tahapek5454");
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel72)
+                .addGap(12, 12, 12)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
+                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel77, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel75, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
-        kGradientPanel1Layout.setVerticalGroup(
-            kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(jLabel6)
-                .addContainerGap(744, Short.MAX_VALUE))
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(jLabel73)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel74)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel77)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel75))
+                    .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
+
+        kGradientPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 620, 350, 180));
+        kGradientPanel1.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 660, 70, 110));
+
+        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/user2.png"))); // NOI18N
+
+        jLabel78.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel78.setText("Melih Selami Urkmez");
+
+        jLabel79.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel79.setText("Student at Kocaeli University.");
+
+        jLabel80.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel80.setText("Contact: melih.s.urkmez@gmail.com");
+
+        jLabel81.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel81.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel81.setText("https://github.com/MelihSelamiUrkmezz");
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel76)
+                .addGap(12, 12, 12)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel78, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                        .addComponent(jLabel79, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel81, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel80, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(28, Short.MAX_VALUE))
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addComponent(jLabel78)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel79)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel81)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel80))
+                    .addComponent(jLabel76, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+
+        kGradientPanel1.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 350, 180));
 
         javax.swing.GroupLayout PnlInfoLayout = new javax.swing.GroupLayout(PnlInfo);
         PnlInfo.setLayout(PnlInfoLayout);
@@ -1843,6 +2023,131 @@ public class MainPage extends javax.swing.JFrame {
         piece.validate();
     }
     
+    public void notification(){
+        int rq=0;
+        if(!remainingquestions.getText().equals("0 Awesome!")){
+        rq=Integer.parseInt(remainingquestions.getText());
+        }
+        not2.setText("You need to solve "+rq+" questions to complete your goal.");
+        
+        not1.setText("Your rank among current users:"+lbl_sequence.getText());
+        
+        int days31[]={1,3,5,7,8,10,12};
+ 
+        Date nowtime = new Date();
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String nowtime2=df.format(nowtime);
+        String split_nowtime[]=nowtime2.split("/");
+        
+        int day=Integer.parseInt(split_nowtime[2]);
+        int month=Integer.parseInt(split_nowtime[1]);
+        int year=Integer.parseInt(split_nowtime[0]);
+         int totalcount=0;
+         int solvecount=0;
+        day=day-1;
+        if(day==0){
+            month-=1;
+            int flag=0;
+            for(int i=0;i<days31.length;i++){
+                
+                if(days31[i]==month){
+                    
+                    flag=1;
+                    break;
+                }
+                
+                
+            }
+            if(flag==0){
+                day=30;
+            }
+            else{
+                day=31;
+            }
+            if(month<=0){
+                month=12;
+                year-=1;
+            }
+        }
+            System.out.println(year+" "+month+" "+day);
+            
+            String query="Select * from Goals where user_id = "+user.getId();
+            try {
+                db.sqlquery=db.con.createStatement();
+                ResultSet res=db.sqlquery.executeQuery(query);
+                
+                while(res.next()){
+                    
+                    String date=res.getString("gdate");
+                    String split_date[]=date.split("/");
+                    int day2=Integer.parseInt(split_date[2]);
+                    int month2=Integer.parseInt(split_date[1]);
+                    int year2=Integer.parseInt(split_date[0]);
+                    
+                   
+                    
+                    if(month2==month && day2==day && year2==year){
+                        
+                        totalcount+=res.getInt("qcount");
+                        
+                        
+                    }
+   
+                }
+                
+                
+                query="Select * from Questions where user_id="+user.getId();
+                
+                db.sqlquery=db.con.createStatement();
+                res=db.sqlquery.executeQuery(query);
+                
+                while(res.next()){
+                    
+                    String date=res.getString("udate");
+                    String split_date[]=date.split("/");
+                    int day2=Integer.parseInt(split_date[2]);
+                    int month2=Integer.parseInt(split_date[1]);
+                    int year2=Integer.parseInt(split_date[0]);
+                    
+                   
+                    
+                    if(month2==month && day2==day && year2==year){
+                        
+                        solvecount+=res.getInt("qcount");
+                        
+                        
+                    }
+                    
+                }
+                
+                if(solvecount>=totalcount){
+                    
+                    
+                    not3.setText("You completed yesterday's goal. Increase your goal!");
+                    
+                    
+                    
+                }
+                
+                else{
+                    
+                    not3.setText("Try to complete your goal!");
+                    
+                }
+                
+                
+                
+                
+                
+            } catch (SQLException ex) {
+                Logger.getLogger(MainPage.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                 
+        
+    }
+    
+    
+    
     public void successrate(){
         
         String query="Select * from Questions where user_id = "+user.getId();
@@ -1886,6 +2191,9 @@ public class MainPage extends javax.swing.JFrame {
         jPanel5.setBackground(color);
         jPanel7.setBackground(color);
         piece.setBackground(color);
+        jPanel8.setBackground(color);
+        jPanel10.setBackground(color);
+        jPanel11.setBackground(color);
         tytbiyoloji.setBackground(new Color(0,0,0,1));
         tytcografya.setBackground(new Color(0,0,0,1));
         tytmatematik.setBackground(new Color(0,0,0,1));
@@ -2165,6 +2473,7 @@ public class MainPage extends javax.swing.JFrame {
         // girdilerin 0 lanmasi icin ekleme yaptim
         daily_rate_circle();
         linechart();
+        notification();
         tytturkce.setText("");
         tytmatematik.setText("");
         tyttarih.setText("");
@@ -2272,6 +2581,7 @@ public class MainPage extends javax.swing.JFrame {
         remaining_question();
         daily_rate_circle();
         linechart();
+        notification();
         // fld lara null atalım
 
         ayt1.setText("");
@@ -2314,6 +2624,7 @@ public class MainPage extends javax.swing.JFrame {
         daily_rate_circle();
         lastsixmonths();
         successrate();
+        notification();
     }//GEN-LAST:event_btn_qcountActionPerformed
 
     private void tyttarihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tyttarihActionPerformed
@@ -2626,23 +2937,50 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
@@ -2702,10 +3040,10 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel not1;
     private javax.swing.JLabel not2;
     private javax.swing.JLabel not3;
-    private javax.swing.JRadioButton radioAll;
     private javax.swing.JPanel piece;
     private ProgressCircle.Progress progress1;
     private ProgressCircle.Progress progress2;
+    private javax.swing.JRadioButton radioAll;
     private javax.swing.JTextField remainingquestions;
     private javax.swing.JTextField school;
     private javax.swing.JPanel statistics;
