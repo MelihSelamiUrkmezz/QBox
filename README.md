@@ -51,15 +51,15 @@ We used our own server to use a common database. We used MySql as database. We u
 
 + **Login Page Ex Photo**
 
-!<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/Login.png" width="1000" height="600">
+<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/Login.png" width="1000" height="600">
 
 + **SignUp Page Ex Photo**
 
-!<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/register.png" width="400" height="600">
+<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/register.png" width="400" height="600">
 
 + **Password Reset Page Ex Photo**
 
-!<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/passreset.png" width="400" height="600">
+<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/passreset.png" width="400" height="600">
 
 + **User Page Ex Photo**
 
