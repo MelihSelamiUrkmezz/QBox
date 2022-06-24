@@ -3,6 +3,28 @@
 
 QBox is an application developed for students preparing for the university exam.
 
+## File Hierarchy
+
+```
+QBox
+│   README.md 
+│   .gitignore 
+│
+└───DBDesign
+│      QBoxER.png ->  ER Table of the database
+│     
+└───ProjectImage -> The project has sample images   
+│  
+│  
+└───RequirementsJarFiles -> Required Jar Files       
+│       
+│   
+└───ProjectCode -> There are project codes and icons
+
+```
+
+
+
 ## In which environment was the application developed?
 
 This application has been developed with the swing framework for its interface with java as a programming language.
