@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Frontend;
+import java.awt.Color;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,8 +17,10 @@ public class Register extends javax.swing.JFrame {
     
     
     public Register() {
-        initComponents();                
+        initComponents();     
+        
     }
+ 
 
     /**
      * This method is called from within the constructor to initialize the form.

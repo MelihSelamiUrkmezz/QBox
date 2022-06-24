@@ -232,7 +232,51 @@ public class MainPage extends javax.swing.JFrame {
         btn_radio = new javax.swing.JButton();
         PnlQA = new javax.swing.JPanel();
         kGradientPanel2 = new keeptoo.KGradientPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel82 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        successrate = new javax.swing.JTextField();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        turkcet = new javax.swing.JTextField();
+        turkcef = new javax.swing.JTextField();
+        turkcen = new javax.swing.JTextField();
+        matt = new javax.swing.JTextField();
+        matf = new javax.swing.JTextField();
+        matn = new javax.swing.JTextField();
+        sosyalt = new javax.swing.JTextField();
+        sosyalf = new javax.swing.JTextField();
+        sosyaln = new javax.swing.JTextField();
+        fent = new javax.swing.JTextField();
+        fenf = new javax.swing.JTextField();
+        fenn = new javax.swing.JTextField();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jSeparator36 = new javax.swing.JSeparator();
+        jSeparator37 = new javax.swing.JSeparator();
+        jSeparator38 = new javax.swing.JSeparator();
+        jSeparator39 = new javax.swing.JSeparator();
+        jSeparator40 = new javax.swing.JSeparator();
+        jSeparator41 = new javax.swing.JSeparator();
+        jSeparator42 = new javax.swing.JSeparator();
+        jSeparator43 = new javax.swing.JSeparator();
+        jSeparator44 = new javax.swing.JSeparator();
+        jSeparator45 = new javax.swing.JSeparator();
+        jSeparator46 = new javax.swing.JSeparator();
+        jSeparator47 = new javax.swing.JSeparator();
+        jSeparator48 = new javax.swing.JSeparator();
+        jSeparator49 = new javax.swing.JSeparator();
+        kGradientPanel8 = new keeptoo.KGradientPanel();
+        jButton1 = new javax.swing.JButton();
+        tytscore = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
         PnlInfo = new javax.swing.JPanel();
         kGradientPanel1 = new keeptoo.KGradientPanel();
         jLabel55 = new javax.swing.JLabel();
@@ -335,9 +379,9 @@ public class MainPage extends javax.swing.JFrame {
         jSeparator24 = new javax.swing.JSeparator();
         jSeparator25 = new javax.swing.JSeparator();
         jSeparator26 = new javax.swing.JSeparator();
-        jLabel7 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setBounds(new java.awt.Rectangle(400, 150, 0, 0));
@@ -353,7 +397,7 @@ public class MainPage extends javax.swing.JFrame {
                 jLabel1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, 60, 80));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 60, 80));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/user.png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1038,25 +1082,212 @@ public class MainPage extends javax.swing.JFrame {
         kGradientPanel2.setkEndColor(new java.awt.Color(0, 0, 204));
         kGradientPanel2.setkGradientFocus(1200);
         kGradientPanel2.setkStartColor(new java.awt.Color(153, 0, 153));
+        kGradientPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel18.setText("question Answer");
+        jPanel9.setOpaque(false);
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
-        kGradientPanel2.setLayout(kGradientPanel2Layout);
-        kGradientPanel2Layout.setHorizontalGroup(
-            kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel2Layout.createSequentialGroup()
-                .addGap(376, 376, 376)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(434, Short.MAX_VALUE))
+        jLabel82.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel82.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel82.setText("TYT EXAM SCORE CALCULATOR");
+        jPanel9.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 310, 30));
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel18.setText("School Success Rate(Ex 98.3):");
+        jPanel9.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 115, -1, -1));
+
+        successrate.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        successrate.setForeground(new java.awt.Color(200, 204, 255));
+        successrate.setBorder(null);
+        jPanel9.add(successrate, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 238, -1));
+
+        jLabel83.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel83.setText("TYT Matematik:");
+        jPanel9.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+
+        jLabel84.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel84.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel84.setText("TYT Sosyal:");
+        jPanel9.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
+
+        jLabel85.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel85.setText("TYT Türkçe:");
+        jPanel9.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
+
+        jLabel86.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel86.setText("TYT Fen:");
+        jPanel9.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
+
+        turkcet.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        turkcet.setForeground(new java.awt.Color(200, 204, 255));
+        turkcet.setText("0");
+        turkcet.setBorder(null);
+        jPanel9.add(turkcet, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 70, -1));
+
+        turkcef.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        turkcef.setForeground(new java.awt.Color(200, 204, 255));
+        turkcef.setText("0");
+        turkcef.setBorder(null);
+        turkcef.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                turkcefKeyReleased(evt);
+            }
+        });
+        jPanel9.add(turkcef, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 220, 70, -1));
+
+        turkcen.setEditable(false);
+        turkcen.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        turkcen.setForeground(new java.awt.Color(200, 204, 255));
+        turkcen.setBorder(null);
+        jPanel9.add(turkcen, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 70, -1));
+
+        matt.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        matt.setForeground(new java.awt.Color(200, 204, 255));
+        matt.setText("0");
+        matt.setBorder(null);
+        jPanel9.add(matt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 70, -1));
+
+        matf.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        matf.setForeground(new java.awt.Color(200, 204, 255));
+        matf.setText("0");
+        matf.setBorder(null);
+        matf.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                matfKeyReleased(evt);
+            }
+        });
+        jPanel9.add(matf, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 70, -1));
+
+        matn.setEditable(false);
+        matn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        matn.setForeground(new java.awt.Color(200, 204, 255));
+        matn.setBorder(null);
+        jPanel9.add(matn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, 70, -1));
+
+        sosyalt.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sosyalt.setForeground(new java.awt.Color(200, 204, 255));
+        sosyalt.setText("0");
+        sosyalt.setBorder(null);
+        jPanel9.add(sosyalt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 70, -1));
+
+        sosyalf.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sosyalf.setForeground(new java.awt.Color(200, 204, 255));
+        sosyalf.setText("0");
+        sosyalf.setBorder(null);
+        sosyalf.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                sosyalfKeyReleased(evt);
+            }
+        });
+        jPanel9.add(sosyalf, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 70, -1));
+
+        sosyaln.setEditable(false);
+        sosyaln.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sosyaln.setForeground(new java.awt.Color(200, 204, 255));
+        sosyaln.setBorder(null);
+        jPanel9.add(sosyaln, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 360, 70, -1));
+
+        fent.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fent.setForeground(new java.awt.Color(200, 204, 255));
+        fent.setText("0");
+        fent.setBorder(null);
+        jPanel9.add(fent, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, 70, -1));
+
+        fenf.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fenf.setForeground(new java.awt.Color(200, 204, 255));
+        fenf.setText("0");
+        fenf.setBorder(null);
+        fenf.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                fenfKeyReleased(evt);
+            }
+        });
+        jPanel9.add(fenf, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, 70, -1));
+
+        fenn.setEditable(false);
+        fenn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        fenn.setForeground(new java.awt.Color(200, 204, 255));
+        fenn.setBorder(null);
+        jPanel9.add(fenn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, 70, -1));
+
+        jLabel87.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel87.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel87.setText("True");
+        jPanel9.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, -1, -1));
+
+        jLabel88.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel88.setText("Net");
+        jPanel9.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 181, -1, -1));
+
+        jLabel89.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel89.setForeground(new java.awt.Color(200, 204, 255));
+        jLabel89.setText("False");
+        jPanel9.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, -1, -1));
+        jPanel9.add(jSeparator36, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 70, 10));
+        jPanel9.add(jSeparator37, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 70, 10));
+        jPanel9.add(jSeparator38, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, 70, -1));
+        jPanel9.add(jSeparator39, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 64, 10));
+        jPanel9.add(jSeparator40, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 240, 10));
+        jPanel9.add(jSeparator41, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 70, 20));
+        jPanel9.add(jSeparator42, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 450, 70, 20));
+        jPanel9.add(jSeparator43, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 450, 70, 10));
+        jPanel9.add(jSeparator44, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 380, 70, 10));
+        jPanel9.add(jSeparator45, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, 70, 10));
+        jPanel9.add(jSeparator46, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, 70, 10));
+        jPanel9.add(jSeparator47, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 70, 10));
+        jPanel9.add(jSeparator48, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 70, 10));
+        jPanel9.add(jSeparator49, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, 70, 10));
+
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(200, 204, 255));
+        jButton1.setText("Calculate!");
+        jButton1.setBorder(null);
+        jButton1.setContentAreaFilled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout kGradientPanel8Layout = new javax.swing.GroupLayout(kGradientPanel8);
+        kGradientPanel8.setLayout(kGradientPanel8Layout);
+        kGradientPanel8Layout.setHorizontalGroup(
+            kGradientPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
         );
-        kGradientPanel2Layout.setVerticalGroup(
-            kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel2Layout.createSequentialGroup()
-                .addGap(72, 72, 72)
-                .addComponent(jLabel18)
-                .addContainerGap(719, Short.MAX_VALUE))
+        kGradientPanel8Layout.setVerticalGroup(
+            kGradientPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
+
+        jPanel9.add(kGradientPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 510, 240, 30));
+
+        tytscore.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        tytscore.setForeground(new java.awt.Color(200, 204, 255));
+        jPanel9.add(tytscore, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, 320, 90));
+
+        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rating.png"))); // NOI18N
+        jPanel9.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 30, 30));
+
+        jLabel91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rating.png"))); // NOI18N
+        jPanel9.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 30, 30));
+
+        jLabel92.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rating.png"))); // NOI18N
+        jPanel9.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 30, 30));
+
+        jLabel93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rating.png"))); // NOI18N
+        jPanel9.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 30, 30));
+
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-calculator-128.png"))); // NOI18N
+        jPanel9.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 120, 140));
+
+        kGradientPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 450, 750));
 
         javax.swing.GroupLayout PnlQALayout = new javax.swing.GroupLayout(PnlQA);
         PnlQA.setLayout(PnlQALayout);
@@ -1665,7 +1896,7 @@ public class MainPage extends javax.swing.JFrame {
                         .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(kGradientPanel6Layout.createSequentialGroup()
                                 .addComponent(l1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                                 .addComponent(ayt1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel6Layout.createSequentialGroup()
                                 .addGroup(kGradientPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1853,14 +2084,6 @@ public class MainPage extends javax.swing.JFrame {
 
         jPanel1.add(TabbedMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, -40, 900, 840));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/question.png"))); // NOI18N
-        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel7MouseClicked(evt);
-            }
-        });
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 60, 80));
-
         jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel40.setForeground(new java.awt.Color(200, 204, 255));
         jLabel40.setText("Quit");
@@ -1877,7 +2100,15 @@ public class MainPage extends javax.swing.JFrame {
                 jLabel43MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, 60, 70));
+        jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, 60, 70));
+
+        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/medal.png"))); // NOI18N
+        jLabel96.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel96MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 50, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -2194,6 +2425,9 @@ public class MainPage extends javax.swing.JFrame {
         jPanel8.setBackground(color);
         jPanel10.setBackground(color);
         jPanel11.setBackground(color);
+        totalTYT.setBackground(new Color(0,0,0,1));
+        totalayt.setBackground(new Color(0,0,0,1));
+        remainingquestions.setBackground(new Color(0,0,0,1));
         tytbiyoloji.setBackground(new Color(0,0,0,1));
         tytcografya.setBackground(new Color(0,0,0,1));
         tytmatematik.setBackground(new Color(0,0,0,1));
@@ -2213,6 +2447,20 @@ public class MainPage extends javax.swing.JFrame {
         falsecount.setBackground(new  Color(0,0,0,1));
         blankcount.setBackground(new Color(0,0,0,1));
         jPanel6.setBackground(color);
+        turkcef.setBackground(new Color(0,0,0,1));
+        turkcen.setBackground(new Color(0,0,0,1));
+        turkcet.setBackground(new Color(0,0,0,1));
+        matf.setBackground(new Color(0,0,0,1));
+        matt.setBackground(new Color(0,0,0,1));
+        matn.setBackground(new Color(0,0,0,1));
+        sosyalt.setBackground(new Color(0,0,0,1));
+        sosyalf.setBackground(new Color(0,0,0,1));
+        sosyaln.setBackground(new Color(0,0,0,1));
+        fent.setBackground(new Color(0,0,0,1));
+        fenf.setBackground(new Color(0,0,0,1));
+        fenn.setBackground(new Color(0,0,0,1));  
+        successrate.setBackground(new Color(0,0,0,1));
+                
         
         
     }
@@ -2316,11 +2564,6 @@ public class MainPage extends javax.swing.JFrame {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
          TabbedMenu.setSelectedIndex(4);
     }//GEN-LAST:event_jLabel1MouseClicked
-
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-        // TODO add your handling code here:
-        TabbedMenu.setSelectedIndex(3);
-    }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel40MouseClicked
         System.exit(0);
@@ -2646,6 +2889,79 @@ public class MainPage extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btn_radioActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       
+        
+        if(!successrate.getText().isBlank() && !matf.getText().isBlank() && !matt.getText().isBlank() && !turkcef.getText().isBlank() && !turkcet.getText().isBlank() && !fenf.getText().isBlank() && !fent.getText().isBlank() && !sosyalf.getText().isBlank() && !sosyalt.getText().isBlank()){
+            
+            double tytturkce=(Integer.parseInt(turkcet.getText())-Integer.parseInt(turkcef.getText())-(0.25*Integer.parseInt(turkcef.getText())))*3.3;
+            double tytfen=(Integer.parseInt(fent.getText())-Integer.parseInt(fenf.getText())-(0.25*Integer.parseInt(fenf.getText())))*3.4;
+            double tytmatematik=(Integer.parseInt(matt.getText())-Integer.parseInt(matf.getText())-(0.25*Integer.parseInt(matf.getText())))*3.3;
+            double tytsosyal=(Integer.parseInt(sosyalt.getText())-Integer.parseInt(sosyalf.getText())-(0.25*Integer.parseInt(sosyalf.getText())))*3.4;
+            
+            double totalscore=tytturkce+tytsosyal+tytmatematik+tytfen+100+(Double.parseDouble(successrate.getText())*0.6);
+            
+            tytscore.setText("<html> (Approximately) Your TYT Score -> "+totalscore+" <br/> Your Total Net -> "+(Double.parseDouble(matn.getText())+Double.parseDouble(turkcen.getText())+Double.parseDouble(fenn.getText())+Double.parseDouble(sosyaln.getText()))+" </html>");
+            
+        }
+        
+        else{
+            
+             tytscore.setText("Please fill in the blanks!");
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLabel96MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel96MouseClicked
+           TabbedMenu.setSelectedIndex(3); 
+    }//GEN-LAST:event_jLabel96MouseClicked
+
+    private void turkcefKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_turkcefKeyReleased
+        int turkcetrue=Integer.parseInt(turkcet.getText());
+        int turkcefalse=0;
+        if(!turkcef.getText().isBlank()){
+            turkcefalse=Integer.parseInt(turkcef.getText());
+        }
+        turkcen.setText(Double.toString(turkcetrue-turkcefalse-turkcefalse*0.25));
+    }//GEN-LAST:event_turkcefKeyReleased
+
+    private void matfKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_matfKeyReleased
+          int mattrue=Integer.parseInt(matt.getText());
+        int matfalse=0;
+        if(!matf.getText().isBlank()){
+            matfalse=Integer.parseInt(matf.getText());
+        }
+        matn.setText(Double.toString(mattrue-matfalse-matfalse*0.25));
+    }//GEN-LAST:event_matfKeyReleased
+
+    private void sosyalfKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_sosyalfKeyReleased
+          int sostrue=Integer.parseInt(sosyalt.getText());
+        int sosfalse=0;
+        if(!sosyalf.getText().isBlank()){
+            sosfalse=Integer.parseInt(sosyalf.getText());
+        }
+        sosyaln.setText(Double.toString(sostrue-sosfalse-sosfalse*0.25));
+    }//GEN-LAST:event_sosyalfKeyReleased
+
+    private void fenfKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fenfKeyReleased
+          int fentrue=Integer.parseInt(fent.getText());
+        int fenfalse=0;
+        if(!fenf.getText().isBlank()){
+            fenfalse=Integer.parseInt(fenf.getText());
+        }
+        fenn.setText(Double.toString(fentrue-fenfalse-fenfalse*0.25));
+    }//GEN-LAST:event_fenfKeyReleased
+
     public void lastsixmonths(){
        
         Date nowtime = new Date();
@@ -2888,7 +3204,11 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JTextField department;
     private javax.swing.JTextField email;
     private javax.swing.JTextField falsecount;
+    private javax.swing.JTextField fenf;
+    private javax.swing.JTextField fenn;
+    private javax.swing.JTextField fent;
     private javax.swing.JTable formalite_table;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2955,7 +3275,6 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
@@ -2969,7 +3288,21 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel96;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -2980,6 +3313,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
@@ -3010,7 +3344,21 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator33;
     private javax.swing.JSeparator jSeparator34;
     private javax.swing.JSeparator jSeparator35;
+    private javax.swing.JSeparator jSeparator36;
+    private javax.swing.JSeparator jSeparator37;
+    private javax.swing.JSeparator jSeparator38;
+    private javax.swing.JSeparator jSeparator39;
     private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator40;
+    private javax.swing.JSeparator jSeparator41;
+    private javax.swing.JSeparator jSeparator42;
+    private javax.swing.JSeparator jSeparator43;
+    private javax.swing.JSeparator jSeparator44;
+    private javax.swing.JSeparator jSeparator45;
+    private javax.swing.JSeparator jSeparator46;
+    private javax.swing.JSeparator jSeparator47;
+    private javax.swing.JSeparator jSeparator48;
+    private javax.swing.JSeparator jSeparator49;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
@@ -3023,6 +3371,7 @@ public class MainPage extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kGradientPanel5;
     private keeptoo.KGradientPanel kGradientPanel6;
     private keeptoo.KGradientPanel kGradientPanel7;
+    private keeptoo.KGradientPanel kGradientPanel8;
     private javax.swing.JLabel l1;
     private javax.swing.JLabel l2;
     private javax.swing.JLabel l3;
@@ -3036,6 +3385,9 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_tq;
     private javax.swing.JComboBox<String> lessonscombo;
     private com.raven.chart.LineChart lineChart2;
+    private javax.swing.JTextField matf;
+    private javax.swing.JTextField matn;
+    private javax.swing.JTextField matt;
     private javax.swing.JTextField name;
     private javax.swing.JLabel not1;
     private javax.swing.JLabel not2;
@@ -3046,11 +3398,18 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JRadioButton radioAll;
     private javax.swing.JTextField remainingquestions;
     private javax.swing.JTextField school;
+    private javax.swing.JTextField sosyalf;
+    private javax.swing.JTextField sosyaln;
+    private javax.swing.JTextField sosyalt;
     private javax.swing.JPanel statistics;
+    private javax.swing.JTextField successrate;
     private javax.swing.JTextField surname;
     private javax.swing.JTextField totalTYT;
     private javax.swing.JTextField totalayt;
     private javax.swing.JTextField truecount;
+    private javax.swing.JTextField turkcef;
+    private javax.swing.JTextField turkcen;
+    private javax.swing.JTextField turkcet;
     private javax.swing.JTextField tytbiyoloji;
     private javax.swing.JTextField tytcografya;
     private javax.swing.JPanel tytdate;
@@ -3061,6 +3420,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JTextField tytkimya;
     private javax.swing.JTextField tytmatematik;
     private javax.swing.JLabel tytmonth;
+    private javax.swing.JLabel tytscore;
     private javax.swing.JTextField tyttarih;
     private javax.swing.JTextField tytturkce;
     // End of variables declaration//GEN-END:variables
