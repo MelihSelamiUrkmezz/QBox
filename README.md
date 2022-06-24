@@ -31,43 +31,43 @@ We used our own server to use a common database. We used MySql as database. We u
 
 !<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/Login.png" width="1000" height="600">
 
-+ SignUp Page Ex Photo
++ *SignUp Page Ex Photo
 
 !<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/register.png" width="400" height="600">
 
-+ Password Reset Page Ex Photo
++ *Password Reset Page Ex Photo
 
 !<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/passreset.png" width="400" height="600">
 
-+ User Page Ex Photo
++ *User Page Ex Photo
 
 ![userpanel](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/userpanel.png)
 
-+ Goal Settings Page Ex Photo
++ *Goal Settings Page Ex Photo
 
 ![goal](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/Target.png)
 
-+ Statistics Page Ex Photo
++ *Statistics Page Ex Photo
 
 ![statistics](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/statistics.png)
 
-+ Arrangement Page Ex Photo
++ *Arrangement Page Ex Photo
 
 ![arrangement](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/arrangement.png)
 
-+ TYT Score Calculator Page Ex Photo
++ *TYT Score Calculator Page Ex Photo
 
 ![calc](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/calculator.png)
 
-+ Information Page Ex Photo
++ *Information Page Ex Photo
 
 ![info](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/information.png)
 
 ### Developers of the application
 
-+ Taha Pek -> Student at Kocaeli University (github: https://github.com/tahapek5454 )
++ *Taha Pek* -> Student at Kocaeli University (github: https://github.com/tahapek5454 )
 
-+ Melih Selami Urkmez -> Student at Kocaeli University (github:https://github.com/MelihSelamiUrkmezz )
++ *Melih Selami Urkmez* -> Student at Kocaeli University (github:https://github.com/MelihSelamiUrkmezz )
 
 
 This version was released as 1. Developments will continue. Stay tuned :)
