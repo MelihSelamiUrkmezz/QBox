@@ -27,7 +27,7 @@ We used our own server to use a common database. We used MySql as database. We u
 
 ### If we provide you with sample interface photos;
 
-+ Login Page Ex Photo
++ **Login Page Ex Photo**
 
 !<img src="https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/Login.png" width="1000" height="600">
 
