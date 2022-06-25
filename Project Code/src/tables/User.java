@@ -60,7 +60,7 @@ public class User {
     // not din kulture dersi falan eksik bir de ayt fazla bolum oldugundan gorsellikten kayiyor
     // ben simdi onu eklemedim gorsellik bozulur diye esit agirlik da yapmadım ders sayisi cok gorsellik kayiyo konusuruz
     
-    public double calculateAYTexam(double net1,double net2,double net3,double net4,int depid, double successRate){
+    public double calculateAYTexam(double net1,double net2,double net3,double net4,double net5,double net6,int depid, double successRate){
         
         double toplam = 0.0;
         if(depid==1){
@@ -89,19 +89,37 @@ public class User {
             
             toplam+=net1*3.0; //turkce
             
-            toplam+=net2*2.8; // tarih not : 1-2 diye ayrilmis ayrilamlari yapmadım yer yok
+            toplam+=net2*2.8; // tarih 1
             
-            toplam+=net3*3.33; // cografya tarihle ayni mantik
+            toplam+=net3*3.33; // cografya 1
             
-            toplam+=net4*3.0; // felsefe
+            toplam+=net4*2.91; // tarih 2 
             
-            // din eksik
+            toplam+=net5*2.91; // cografya 2
+            
+            toplam+=net6*3; // din-felsefe kat 3 aldi
             
             toplam+=successRate*0.6; // OBP
             
             toplam+=100.0; // devlet veriyormus haberim yoktu
             
             return toplam;
+            
+        }
+        
+        else if(depid==3){
+            
+            toplam+=net1*3;
+            toplam+=net2*3;
+            toplam+=net3*2.8;
+            toplam+=net4*3.33;
+            
+            toplam+=successRate*0.6; // OBP
+            
+            toplam+=100.0; // devlet veriyormus haberim yoktu
+            
+            return toplam;
+                   
             
         }
         
