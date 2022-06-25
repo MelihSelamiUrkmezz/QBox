@@ -55,6 +55,64 @@ public class User {
       // methods...
     
     
+    // ayt exam calculater in islemleri
+    
+    // not din kulture dersi falan eksik bir de ayt fazla bolum oldugundan gorsellikten kayiyor
+    // ben simdi onu eklemedim gorsellik bozulur diye esit agirlik da yapmadım ders sayisi cok gorsellik kayiyo konusuruz
+    
+    public double calculateAYTexam(double net1,double net2,double net3,double net4,int depid, double successRate){
+        
+        double toplam = 0.0;
+        if(depid==1){
+            // sayisal derslere gore hesaplama
+            
+            toplam+=net1*3.0; // matematik
+            
+            toplam+=net2*2.85; // fizik
+            
+            toplam+=net3*3.07; // kimys
+            
+            toplam+=net4*3.07; // biyoloji
+            
+            toplam+=successRate*0.6; // OBP
+            
+            toplam+=100.0; // devlet veriyormus haberim yoktu
+             
+            
+            return toplam;
+  
+            
+        }else if(depid == 2){
+            
+            // sozel derslere gore hesaplama
+            
+            
+            toplam+=net1*3.0; //turkce
+            
+            toplam+=net2*2.8; // tarih not : 1-2 diye ayrilmis ayrilamlari yapmadım yer yok
+            
+            toplam+=net3*3.33; // cografya tarihle ayni mantik
+            
+            toplam+=net4*3.0; // felsefe
+            
+            // din eksik
+            
+            toplam+=successRate*0.6; // OBP
+            
+            toplam+=100.0; // devlet veriyormus haberim yoktu
+            
+            return toplam;
+            
+        }
+        
+        
+        return toplam;
+    }
+    
+    
+
+    
+    
     // secili okuldaki ya da herkesi iceren bilgi soru
     // ve net sayilarini sıraya sokan bir methods
     
