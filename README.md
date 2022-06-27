@@ -79,7 +79,7 @@ We used our own server to use a common database. We used MySql as database. We u
 
 + **TYT/AYT Score Calculator Page Ex Photo**
 
-![calc](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/calculatorupdate.png)
+![calc](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/calcpageupdate.png)
 
 + **Information Page Ex Photo**
 
