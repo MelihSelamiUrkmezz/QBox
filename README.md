@@ -63,7 +63,7 @@ We used our own server to use a common database. We used MySql as database. We u
 
 + **User Page Ex Photo**
 
-![userpanel](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/userpanel.png)
+![userpanel](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/mainpageupdate.png)
 
 + **Goal Settings Page Ex Photo**
 
@@ -79,7 +79,7 @@ We used our own server to use a common database. We used MySql as database. We u
 
 + **TYT/AYT Score Calculator Page Ex Photo**
 
-![calc](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/update.png)
+![calc](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/calculatorupdate.png)
 
 + **Information Page Ex Photo**
 
