@@ -2645,7 +2645,7 @@
                             </Constraint>
                           </Constraints>
                         </Component>
-                        <Component class="javax.swing.JSeparator" name="jSeparator54">
+                        <Component class="javax.swing.JSeparator" name="sep3">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                               <AbsoluteConstraints x="370" y="400" width="70" height="20"/>
@@ -2833,7 +2833,7 @@
                             </Constraint>
                           </Constraints>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel110">
+                        <Component class="javax.swing.JLabel" name="lbl2">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/Images/rating.png"/>
@@ -2912,14 +2912,14 @@
                             </Constraint>
                           </Constraints>
                         </Component>
-                        <Component class="javax.swing.JSeparator" name="jSeparator64">
+                        <Component class="javax.swing.JSeparator" name="sep6">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                               <AbsoluteConstraints x="370" y="460" width="70" height="20"/>
                             </Constraint>
                           </Constraints>
                         </Component>
-                        <Component class="javax.swing.JSeparator" name="jSeparator65">
+                        <Component class="javax.swing.JSeparator" name="sep2">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                               <AbsoluteConstraints x="280" y="400" width="70" height="20"/>
@@ -2942,7 +2942,7 @@
                             </Constraint>
                           </Constraints>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel111">
+                        <Component class="javax.swing.JLabel" name="lbl1">
                           <Properties>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                               <Image iconType="3" name="/Images/rating.png"/>
@@ -3014,21 +3014,21 @@
                             </Constraint>
                           </Constraints>
                         </Component>
-                        <Component class="javax.swing.JSeparator" name="jSeparator66">
+                        <Component class="javax.swing.JSeparator" name="sep1">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                               <AbsoluteConstraints x="190" y="400" width="70" height="20"/>
                             </Constraint>
                           </Constraints>
                         </Component>
-                        <Component class="javax.swing.JSeparator" name="jSeparator67">
+                        <Component class="javax.swing.JSeparator" name="sep4">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                               <AbsoluteConstraints x="190" y="460" width="70" height="20"/>
                             </Constraint>
                           </Constraints>
                         </Component>
-                        <Component class="javax.swing.JSeparator" name="jSeparator68">
+                        <Component class="javax.swing.JSeparator" name="sep5">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                               <AbsoluteConstraints x="280" y="460" width="70" height="20"/>

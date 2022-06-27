@@ -94,6 +94,26 @@ public class MainPage extends javax.swing.JFrame {
             ayt4Exam.setText("AYT Biyoloji(13):");
             ayt5Exam.setText("");
             ayt6Exam.setText("");
+            
+            
+            // burda gereksiz fldlari lbl lari gostertmiyorum
+            ayt5Exam.setVisible(false);
+            ayt6Exam.setVisible(false);
+            fld_ayt5False.setVisible(false);
+            fld_ayt5True.setVisible(false);
+            fld_ayt5Net.setVisible(false);
+            fld_ayt6False.setVisible(false);
+            fld_ayt6True.setVisible(false);
+            fld_ayt6Net.setVisible(false);
+            lbl1.setVisible(false);
+            lbl2.setVisible(false);
+            sep1.setVisible(false);
+            sep2.setVisible(false);
+            sep3.setVisible(false);
+            sep4.setVisible(false);
+            sep5.setVisible(false);
+            sep6.setVisible(false);
+            
         }else if(user.getDepId() == 2){
             
             // sozel
@@ -112,6 +132,24 @@ public class MainPage extends javax.swing.JFrame {
             ayt4Exam.setText("Sos-1 Coğrafya(6):"); 
             ayt5Exam.setText("");
             ayt6Exam.setText("");
+            
+            // burda gereksiz fldlari lbl lari gostertmiyorum
+            ayt5Exam.setVisible(false);
+            ayt6Exam.setVisible(false);
+            fld_ayt5False.setVisible(false);
+            fld_ayt5True.setVisible(false);
+            fld_ayt5Net.setVisible(false);
+            fld_ayt6False.setVisible(false);
+            fld_ayt6True.setVisible(false);
+            fld_ayt6Net.setVisible(false);
+            lbl1.setVisible(false);
+            lbl2.setVisible(false);
+            sep1.setVisible(false);
+            sep2.setVisible(false);
+            sep3.setVisible(false);
+            sep4.setVisible(false);
+            sep5.setVisible(false);
+            sep6.setVisible(false);
         }
     }
     
@@ -337,7 +375,7 @@ public class MainPage extends javax.swing.JFrame {
         jSeparator40 = new javax.swing.JSeparator();
         jSeparator51 = new javax.swing.JSeparator();
         jSeparator52 = new javax.swing.JSeparator();
-        jSeparator54 = new javax.swing.JSeparator();
+        sep3 = new javax.swing.JSeparator();
         jSeparator55 = new javax.swing.JSeparator();
         jSeparator56 = new javax.swing.JSeparator();
         jSeparator57 = new javax.swing.JSeparator();
@@ -354,21 +392,21 @@ public class MainPage extends javax.swing.JFrame {
         jLabel107 = new javax.swing.JLabel();
         jLabel108 = new javax.swing.JLabel();
         ayt5Exam = new javax.swing.JLabel();
-        jLabel110 = new javax.swing.JLabel();
+        lbl2 = new javax.swing.JLabel();
         fld_ayt5True = new javax.swing.JTextField();
         fld_ayt5False = new javax.swing.JTextField();
         fld_ayt5Net = new javax.swing.JTextField();
         jSeparator63 = new javax.swing.JSeparator();
-        jSeparator64 = new javax.swing.JSeparator();
-        jSeparator65 = new javax.swing.JSeparator();
+        sep6 = new javax.swing.JSeparator();
+        sep2 = new javax.swing.JSeparator();
         ayt6Exam = new javax.swing.JLabel();
-        jLabel111 = new javax.swing.JLabel();
+        lbl1 = new javax.swing.JLabel();
         fld_ayt6True = new javax.swing.JTextField();
         fld_ayt6False = new javax.swing.JTextField();
         fld_ayt6Net = new javax.swing.JTextField();
-        jSeparator66 = new javax.swing.JSeparator();
-        jSeparator67 = new javax.swing.JSeparator();
-        jSeparator68 = new javax.swing.JSeparator();
+        sep1 = new javax.swing.JSeparator();
+        sep4 = new javax.swing.JSeparator();
+        sep5 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         PnlInfo = new javax.swing.JPanel();
@@ -1522,7 +1560,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel12.add(jSeparator40, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 70, 10));
         jPanel12.add(jSeparator51, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 70, 10));
         jPanel12.add(jSeparator52, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 70, -1));
-        jPanel12.add(jSeparator54, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 400, 70, 20));
+        jPanel12.add(sep3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 400, 70, 20));
         jPanel12.add(jSeparator55, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 70, 20));
         jPanel12.add(jSeparator56, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 340, 70, 10));
         jPanel12.add(jSeparator57, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 70, 10));
@@ -1581,8 +1619,8 @@ public class MainPage extends javax.swing.JFrame {
         ayt5Exam.setText("AYT 5");
         jPanel12.add(ayt5Exam, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 130, -1));
 
-        jLabel110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rating.png"))); // NOI18N
-        jPanel12.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 30, 30));
+        lbl2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rating.png"))); // NOI18N
+        jPanel12.add(lbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 30, 30));
 
         fld_ayt5True.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         fld_ayt5True.setForeground(new java.awt.Color(200, 204, 255));
@@ -1607,16 +1645,16 @@ public class MainPage extends javax.swing.JFrame {
         fld_ayt5Net.setBorder(null);
         jPanel12.add(fld_ayt5Net, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, 70, -1));
         jPanel12.add(jSeparator63, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 70, 20));
-        jPanel12.add(jSeparator64, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, 70, 20));
-        jPanel12.add(jSeparator65, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 70, 20));
+        jPanel12.add(sep6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, 70, 20));
+        jPanel12.add(sep2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 70, 20));
 
         ayt6Exam.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         ayt6Exam.setForeground(new java.awt.Color(200, 204, 255));
         ayt6Exam.setText("AYT 6");
         jPanel12.add(ayt6Exam, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 130, -1));
 
-        jLabel111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rating.png"))); // NOI18N
-        jPanel12.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 30, 30));
+        lbl1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rating.png"))); // NOI18N
+        jPanel12.add(lbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 30, 30));
 
         fld_ayt6True.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         fld_ayt6True.setForeground(new java.awt.Color(200, 204, 255));
@@ -1640,9 +1678,9 @@ public class MainPage extends javax.swing.JFrame {
         fld_ayt6Net.setForeground(new java.awt.Color(200, 204, 255));
         fld_ayt6Net.setBorder(null);
         jPanel12.add(fld_ayt6Net, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 440, 70, -1));
-        jPanel12.add(jSeparator66, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 70, 20));
-        jPanel12.add(jSeparator67, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 460, 70, 20));
-        jPanel12.add(jSeparator68, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, 70, 20));
+        jPanel12.add(sep1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 70, 20));
+        jPanel12.add(sep4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 460, 70, 20));
+        jPanel12.add(sep5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, 70, 20));
 
         kGradientPanel2.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 430, 580));
 
@@ -3386,38 +3424,86 @@ public class MainPage extends javax.swing.JFrame {
     private void btn_aytExamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aytExamActionPerformed
         // TODO add your handling code here:
         
-        if(!successrate.getText().isBlank() && !fld_ayt1False.getText().isBlank() && !fld_ayt1True.getText().isBlank() && !fld_ayt2False.getText().isBlank() && !fld_ayt2True.getText().isBlank() && !fld_ayt3False.getText().isBlank() && !fld_ayt3True.getText().isBlank() && !fld_ayt4False.getText().isBlank() && !fld_ayt4True.getText().isBlank()){
+        if(user.getDepId()==1 || user.getDepId()==3){
+            
+            if(!successrate.getText().isBlank() && !fld_ayt1False.getText().isBlank() && !fld_ayt1True.getText().isBlank() && !fld_ayt2False.getText().isBlank() && !fld_ayt2True.getText().isBlank() && !fld_ayt3False.getText().isBlank() && !fld_ayt3True.getText().isBlank() && !fld_ayt4False.getText().isBlank() && !fld_ayt4True.getText().isBlank()){
             
             double net1=(Integer.parseInt(fld_ayt1True.getText())-Integer.parseInt(fld_ayt1False.getText())-(0.25*Integer.parseInt(fld_ayt1False.getText())));
             double net2=(Integer.parseInt(fld_ayt2True.getText())-Integer.parseInt(fld_ayt2False.getText())-(0.25*Integer.parseInt(fld_ayt2False.getText())));
             double net3=(Integer.parseInt(fld_ayt3True.getText())-Integer.parseInt(fld_ayt3False.getText())-(0.25*Integer.parseInt(fld_ayt3False.getText())));
             double net4=(Integer.parseInt(fld_ayt4True.getText())-Integer.parseInt(fld_ayt4False.getText())-(0.25*Integer.parseInt(fld_ayt4False.getText())));
             
+            
             fld_ayt1Net.setText(""+net1);
             fld_ayt2Net.setText(""+net2);
             fld_ayt3Net.setText(""+net3);
             fld_ayt4Net.setText(""+net4);
             
-            
-            double totalscore=user.calculateAYTexam(net1, net2, net3, net4, user.getDepId(), Double.parseDouble(successrate.getText()));
+            // burayi degistireceksin
+            double totalscore=user.calculateAYTexam(net1, net2, net3, net4,0,0, user.getDepId(), Double.parseDouble(successrate.getText()));
             
             aytScore.setText("<html> (Approximately) Your AYT Score -> "+totalscore+" <br/> Your Total Net -> "+(net1+net2+net3+net4)+" </html>");
             
-        }
-        
-        else{
+            }
+            else{
             
              aytScore.setText("Please fill in the blanks!");
             
+            }
+        } else if(user.getDepId()==2){
+            
+            if(!successrate.getText().isBlank() && !fld_ayt1False.getText().isBlank() && !fld_ayt1True.getText().isBlank() && !fld_ayt2False.getText().isBlank() && !fld_ayt2True.getText().isBlank() && !fld_ayt3False.getText().isBlank() && !fld_ayt3True.getText().isBlank() &&
+                    !fld_ayt4False.getText().isBlank() && !fld_ayt4True.getText().isBlank() && !fld_ayt5False.getText().isBlank() && !fld_ayt5True.getText().isBlank() && !fld_ayt6False.getText().isBlank() && !fld_ayt6True.getText().isBlank()){
+            
+            double net1=(Integer.parseInt(fld_ayt1True.getText())-Integer.parseInt(fld_ayt1False.getText())-(0.25*Integer.parseInt(fld_ayt1False.getText())));
+            double net2=(Integer.parseInt(fld_ayt2True.getText())-Integer.parseInt(fld_ayt2False.getText())-(0.25*Integer.parseInt(fld_ayt2False.getText())));
+            double net3=(Integer.parseInt(fld_ayt3True.getText())-Integer.parseInt(fld_ayt3False.getText())-(0.25*Integer.parseInt(fld_ayt3False.getText())));
+            double net4=(Integer.parseInt(fld_ayt4True.getText())-Integer.parseInt(fld_ayt4False.getText())-(0.25*Integer.parseInt(fld_ayt4False.getText())));
+            double net5=(Integer.parseInt(fld_ayt5True.getText())-Integer.parseInt(fld_ayt5False.getText())-(0.25*Integer.parseInt(fld_ayt5False.getText())));
+            double net6=(Integer.parseInt(fld_ayt6True.getText())-Integer.parseInt(fld_ayt6False.getText())-(0.25*Integer.parseInt(fld_ayt6False.getText())));
+            
+            fld_ayt1Net.setText(""+net1);
+            fld_ayt2Net.setText(""+net2);
+            fld_ayt3Net.setText(""+net3);
+            fld_ayt4Net.setText(""+net4);
+            fld_ayt6Net.setText(""+net6);
+            fld_ayt5Net.setText(""+net5);
+            
+            // burayi degistireceksin
+            double totalscore=user.calculateAYTexam(net1, net2, net3, net4,net5,net6, user.getDepId(), Double.parseDouble(successrate.getText()));
+            
+            aytScore.setText("<html> (Approximately) Your AYT Score -> "+totalscore+" <br/> Your Total Net -> "+(net1+net2+net3+net4+net5+net6)+" </html>");
+            
+            }
+            else{
+            
+             aytScore.setText("Please fill in the blanks!");
+            
+            }    
+            
         }
+        
+        
     }//GEN-LAST:event_btn_aytExamActionPerformed
 
     private void fld_ayt5FalseKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fld_ayt5FalseKeyReleased
         // TODO add your handling code here:
+        int ayt5True=Integer.parseInt(fld_ayt5True.getText());
+        int ayt5false=0;
+        if(!fld_ayt5False.getText().isBlank()){
+            ayt5false=Integer.parseInt(fld_ayt5False.getText());
+        }
+        fld_ayt5Net.setText(Double.toString(ayt5True-ayt5false-ayt5false*0.25));
     }//GEN-LAST:event_fld_ayt5FalseKeyReleased
 
     private void fld_ayt6FalseKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fld_ayt6FalseKeyReleased
         // TODO add your handling code here:
+        int ayt6True=Integer.parseInt(fld_ayt6True.getText());
+        int ayt6false=0;
+        if(!fld_ayt6False.getText().isBlank()){
+            ayt6false=Integer.parseInt(fld_ayt6False.getText());
+        }
+        fld_ayt6Net.setText(Double.toString(ayt6True-ayt6false-ayt6false*0.25));
     }//GEN-LAST:event_fld_ayt6FalseKeyReleased
 
     public void lastsixmonths(){
@@ -3703,8 +3789,6 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -3859,7 +3943,6 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator50;
     private javax.swing.JSeparator jSeparator51;
     private javax.swing.JSeparator jSeparator52;
-    private javax.swing.JSeparator jSeparator54;
     private javax.swing.JSeparator jSeparator55;
     private javax.swing.JSeparator jSeparator56;
     private javax.swing.JSeparator jSeparator57;
@@ -3870,11 +3953,6 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator61;
     private javax.swing.JSeparator jSeparator62;
     private javax.swing.JSeparator jSeparator63;
-    private javax.swing.JSeparator jSeparator64;
-    private javax.swing.JSeparator jSeparator65;
-    private javax.swing.JSeparator jSeparator66;
-    private javax.swing.JSeparator jSeparator67;
-    private javax.swing.JSeparator jSeparator68;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
@@ -3892,6 +3970,8 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JLabel l3;
     private javax.swing.JLabel l4;
     private javax.swing.JLabel l5;
+    private javax.swing.JLabel lbl1;
+    private javax.swing.JLabel lbl2;
     private javax.swing.JLabel lbl_name;
     private javax.swing.JLabel lbl_school;
     private javax.swing.JLabel lbl_sequence;
@@ -3913,6 +3993,12 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JRadioButton radioAll;
     private javax.swing.JTextField remainingquestions;
     private javax.swing.JTextField school;
+    private javax.swing.JSeparator sep1;
+    private javax.swing.JSeparator sep2;
+    private javax.swing.JSeparator sep3;
+    private javax.swing.JSeparator sep4;
+    private javax.swing.JSeparator sep5;
+    private javax.swing.JSeparator sep6;
     private javax.swing.JTextField sosyalf;
     private javax.swing.JTextField sosyaln;
     private javax.swing.JTextField sosyalt;
