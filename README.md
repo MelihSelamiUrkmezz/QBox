@@ -77,9 +77,9 @@ We used our own server to use a common database. We used MySql as database. We u
 
 ![arrangement](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/arrangement.png)
 
-+ **TYT Score Calculator Page Ex Photo**
++ **TYT/AYT Score Calculator Page Ex Photo**
 
-![calc](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/calculator.png)
+![calc](https://github.com/MelihSelamiUrkmezz/QBox/blob/master/ProjectImage/update.png)
 
 + **Information Page Ex Photo**
 
